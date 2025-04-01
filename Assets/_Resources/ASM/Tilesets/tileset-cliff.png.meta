@@ -64,7 +64,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -78,7 +78,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -169,12 +169,12 @@ TextureImporter:
       name: tileset-cliff_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 290
-        width: 144
-        height: 178
+        x: 32
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -191,12 +191,12 @@ TextureImporter:
       name: tileset-cliff_1
       rect:
         serializedVersion: 2
-        x: 159
-        y: 287
-        width: 226
-        height: 162
+        x: 64
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -213,12 +213,12 @@ TextureImporter:
       name: tileset-cliff_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 130
-        width: 193
-        height: 63
+        x: 96
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -235,12 +235,12 @@ TextureImporter:
       name: tileset-cliff_3
       rect:
         serializedVersion: 2
-        x: 223
-        y: 130
-        width: 194
-        height: 63
+        x: 0
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -257,12 +257,12 @@ TextureImporter:
       name: tileset-cliff_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 31
-        width: 65
-        height: 66
+        x: 32
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -279,12 +279,12 @@ TextureImporter:
       name: tileset-cliff_5
       rect:
         serializedVersion: 2
-        x: 74
-        y: 31
-        width: 44
-        height: 66
+        x: 64
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -301,12 +301,12 @@ TextureImporter:
       name: tileset-cliff_6
       rect:
         serializedVersion: 2
-        x: 127
-        y: 35
-        width: 162
-        height: 62
+        x: 96
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -323,12 +323,12 @@ TextureImporter:
       name: tileset-cliff_7
       rect:
         serializedVersion: 2
-        x: 127
-        y: 31
-        width: 34
-        height: 20
+        x: 128
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -345,12 +345,12 @@ TextureImporter:
       name: tileset-cliff_8
       rect:
         serializedVersion: 2
-        x: 296
-        y: 34
-        width: 48
-        height: 63
+        x: 160
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -367,12 +367,12 @@ TextureImporter:
       name: tileset-cliff_9
       rect:
         serializedVersion: 2
-        x: 360
-        y: 34
-        width: 48
-        height: 63
+        x: 192
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -386,520 +386,14 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x0y448-w32h32
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 448
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6707e85ee2a42d14a86ba729894e9db4
-      internalID: -855460662
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x32y448-w32h32
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 448
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 01a9086ddde27794499d1613795f8e0a
-      internalID: 1881257870
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x64y448-w32h32
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 448
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 683cc7d1e376cca4790f4b8de41c0654
-      internalID: 1243819701
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x96y448-w32h32
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 448
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 025dab9342f4e354b8ce649f876bb62c
-      internalID: -537145141
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x128y448-w32h32
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 448
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1084d75143351c847858ffde9c2c9285
-      internalID: 1459333683
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x160y448-w32h32
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 448
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 01ffe1eb62ce1e14eb9bd03360938cf8
-      internalID: -1640165434
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x192y448-w32h32
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 448
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 61faefb49088d614aaa3152ab49dc204
-      internalID: -1056758074
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x224y448-w32h32
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 448
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 45dacf8ee8f94854b99040d2617946a2
-      internalID: 1694540691
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x256y448-w32h32
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 448
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d2d6394390b8e7a42b7194ebd9101664
-      internalID: -1337735081
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x288y448-w32h32
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 448
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8a02901c1fa482f498b3646d2d70f801
-      internalID: -1439030802
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x320y448-w32h32
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 448
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a66d6b30879d7a9438285cb0bcc1861b
-      internalID: -1706960426
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x352y448-w32h32
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 448
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6f13322637d4f79449328ed42ed7f565
-      internalID: -1499329285
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x384y448-w32h32
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 448
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 04b0a1ed18bfaee498aa9c4fe3f92ce8
-      internalID: 1458908874
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x416y448-w32h32
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 448
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9d8b3851fecb27944b3d19c13ba49d48
-      internalID: 36061293
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x448y448-w32h32
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 448
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e73d4b32a126cf243b5d50e5ad24065c
-      internalID: 1268225705
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x480y448-w32h32
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 448
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f1d31265c9150584daa7e81558c90cc4
-      internalID: -1108029165
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x0y416-w32h32
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 416
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d47976783eee7294da73981441eb1d12
-      internalID: -557453705
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x32y416-w32h32
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 416
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cb3c91815b8b9334c8ae3de6b2bbc896
-      internalID: 1050831486
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x64y416-w32h32
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 416
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: deb40418df48aa5419a23f83875c7279
-      internalID: 1841544457
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x96y416-w32h32
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 416
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c8438f61094118d448c526847839479e
-      internalID: -862345665
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x128y416-w32h32
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 416
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0bae319a003a9be45be8cd521474baa5
-      internalID: 351938048
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x160y416-w32h32
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 416
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e28d8fead640d714fb233183efbcaaa5
-      internalID: -937149890
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x192y416-w32h32
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 416
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 921756df2a7c21043bb67f5477aaf7b5
-      internalID: 1821219311
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x224y416-w32h32
+      name: tileset-cliff_10
       rect:
         serializedVersion: 2
         x: 224
         y: 416
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -907,21 +401,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 926f5dfa981b07d41aec1a8b23f5b391
-      internalID: 787443163
+      spriteID: 6f00e9f63c086f14ba5bd5decc9fa5f1
+      internalID: 390077126
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x256y416-w32h32
+      name: tileset-cliff_11
       rect:
         serializedVersion: 2
         x: 256
         y: 416
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -929,21 +423,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e9139213a19e4142bf58214fc56f282
-      internalID: -133377605
+      spriteID: 866db3396eba0fe44bfdb2d72d0e62a9
+      internalID: -230970072
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x288y416-w32h32
+      name: tileset-cliff_12
       rect:
         serializedVersion: 2
         x: 288
         y: 416
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -951,21 +445,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c60bb162e1965841bd4b46090229376
-      internalID: 230486494
+      spriteID: fa0dcfce109b98b4ba6b9fd562ecaa8d
+      internalID: 1926585019
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x320y416-w32h32
+      name: tileset-cliff_13
       rect:
         serializedVersion: 2
         x: 320
         y: 416
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -973,131 +467,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18583d7ce11b9c84998bb13fab1e8af7
-      internalID: -1994998868
+      spriteID: db114a9deca5db0409b983bccfe8547f
+      internalID: -1418312253
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x352y416-w32h32
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 416
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 693e9dfd90a3cdf4c9462f8cb468a765
-      internalID: -1332418432
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x384y416-w32h32
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 416
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0af8bf355bf66d74791555bbb38f1de3
-      internalID: -147031563
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x416y416-w32h32
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 416
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a69a1f2f01f25649a89d8fe3e083b5a
-      internalID: -581869074
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x448y416-w32h32
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 416
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d528c42c3763c1946aed738f1a1a10e6
-      internalID: 1856191157
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x480y416-w32h32
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 416
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b153f5e2de1a5a419c3912503b9823b
-      internalID: -1766469403
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x0y384-w32h32
+      name: tileset-cliff_14
       rect:
         serializedVersion: 2
         x: 0
         y: 384
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -1105,21 +489,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e67d16e0280dee449a55834f2a1872ca
-      internalID: 1028226283
+      spriteID: d8cbbad3f6d026c449a2c01f37208290
+      internalID: -2084744031
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x32y384-w32h32
+      name: tileset-cliff_15
       rect:
         serializedVersion: 2
         x: 32
         y: 384
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -1127,21 +511,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd608c05ded5fc34389a79653a6e7d07
-      internalID: -1355605950
+      spriteID: e9607d0bf7268e94093c075189f15dc9
+      internalID: -1279648087
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x64y384-w32h32
+      name: tileset-cliff_16
       rect:
         serializedVersion: 2
         x: 64
         y: 384
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -1149,21 +533,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec913f78359385647a614a69df898be2
-      internalID: 221429747
+      spriteID: 2bb0745bebcc17d4abe080c2dda04b91
+      internalID: -612953125
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x96y384-w32h32
+      name: tileset-cliff_17
       rect:
         serializedVersion: 2
         x: 96
         y: 384
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -1171,21 +555,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e9e6ea4dedfaf246a4e0286e209b637
-      internalID: -812530890
+      spriteID: f387f4855db8400429d55913d70e0fd4
+      internalID: -222415631
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x128y384-w32h32
+      name: tileset-cliff_18
       rect:
         serializedVersion: 2
         x: 128
         y: 384
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -1193,21 +577,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35fd76dd1f9811e409fac12ecd61cb6e
-      internalID: -1549116070
+      spriteID: 6eb391a1faf0667469ee0c989e55d3cb
+      internalID: 1744368950
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x160y384-w32h32
+      name: tileset-cliff_19
       rect:
         serializedVersion: 2
         x: 160
         y: 384
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -1215,21 +599,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 754bc874f0a6ed946b0e0cffbbd9a372
-      internalID: 2067078145
+      spriteID: 80f081b81be6d9946927fed64e5073fa
+      internalID: -1943837293
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x192y384-w32h32
+      name: tileset-cliff_20
       rect:
         serializedVersion: 2
         x: 192
         y: 384
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -1237,21 +621,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 396f65126c004b44fbcaf2456b8bfe61
-      internalID: 456381164
+      spriteID: 9cb1f60b28c678f4a98d8703ff3750c5
+      internalID: 1058268386
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x224y384-w32h32
+      name: tileset-cliff_21
       rect:
         serializedVersion: 2
         x: 224
         y: 384
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -1259,21 +643,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9846991309cae04e86c18dca8c3089f
-      internalID: 1780378630
+      spriteID: f43c23edc34fa54459b7efa3b3fd2492
+      internalID: 1217135701
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x256y384-w32h32
+      name: tileset-cliff_22
       rect:
         serializedVersion: 2
         x: 256
         y: 384
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -1281,21 +665,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3f9370bf42641d4c9d4092024983f86
-      internalID: -1685183491
+      spriteID: 1f0766c3a507a6c43abae5fbf826e8cb
+      internalID: 992392503
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x288y384-w32h32
+      name: tileset-cliff_23
       rect:
         serializedVersion: 2
         x: 288
         y: 384
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -1303,21 +687,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8aa9979618e1a84487006d310f4555f
-      internalID: 1700289360
+      spriteID: ec6dcae0daa7f2b48867d85c7cd413bf
+      internalID: -1880787348
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x320y384-w32h32
+      name: tileset-cliff_24
       rect:
         serializedVersion: 2
         x: 320
         y: 384
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -1325,21 +709,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5573a04209c712e4fa4f28dfb373d920
-      internalID: 153247425
+      spriteID: 5bc234f642f7d9c4ca67f664289416b2
+      internalID: 1423887515
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x352y384-w32h32
+      name: tileset-cliff_25
       rect:
         serializedVersion: 2
         x: 352
         y: 384
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -1347,109 +731,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60f871d07587345419f26b722fc74d2b
-      internalID: -2105974858
+      spriteID: c5c2e189fe1f4e0458bfdce087ecf365
+      internalID: -381264254
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x384y384-w32h32
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 384
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0e08a294d81254b44bd342acd26b31dd
-      internalID: 1658813620
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x416y384-w32h32
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 384
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9a975696d5c5f0941a173ec5550178bd
-      internalID: -497808224
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x448y384-w32h32
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 384
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42c8d10f62fefef4fbb6f681de099698
-      internalID: 1758876444
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x480y384-w32h32
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 384
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1894c7c4ae3270f4f8d9aaa82ad03fa9
-      internalID: -632743546
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x0y352-w32h32
+      name: tileset-cliff_26
       rect:
         serializedVersion: 2
         x: 0
         y: 352
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -1457,21 +753,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7652774e53f85204eb895b3f1621c57c
-      internalID: 566673289
+      spriteID: d3d73efb19224d84b8245e99064ba46d
+      internalID: -1888647321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x32y352-w32h32
+      name: tileset-cliff_27
       rect:
         serializedVersion: 2
         x: 32
         y: 352
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -1479,21 +775,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4268673c1ccd3b64ea602675cfff75ad
-      internalID: 723244879
+      spriteID: 09aa1c42554b67448adaa4a0a10e7010
+      internalID: 1763267535
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x64y352-w32h32
+      name: tileset-cliff_28
       rect:
         serializedVersion: 2
         x: 64
         y: 352
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -1501,21 +797,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e191eeff8e5fabf47885a27a61e74270
-      internalID: -1988803509
+      spriteID: e785a7da821b5e641853b04e1ffc838f
+      internalID: 1352594554
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x96y352-w32h32
+      name: tileset-cliff_29
       rect:
         serializedVersion: 2
         x: 96
         y: 352
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -1523,21 +819,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c25cac66fbc054346abb8c7b02b2340a
-      internalID: 616655917
+      spriteID: 54d471f18fde9f841b00b83397f73acf
+      internalID: -669163523
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x128y352-w32h32
+      name: tileset-cliff_30
       rect:
         serializedVersion: 2
         x: 128
         y: 352
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -1545,21 +841,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7859e62c4d0000f47b46feb2c991a06f
-      internalID: 1437651832
+      spriteID: 391ed17ef358ccf4a9f517263deb989b
+      internalID: -671206695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x160y352-w32h32
+      name: tileset-cliff_31
       rect:
         serializedVersion: 2
         x: 160
         y: 352
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -1567,21 +863,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31c938a6fa5bd9541b808e5685d26644
-      internalID: -1798293907
+      spriteID: 8b70eaaa8f3c148458ef56423b2c79fa
+      internalID: 2098050642
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x192y352-w32h32
+      name: tileset-cliff_32
       rect:
         serializedVersion: 2
         x: 192
         y: 352
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -1589,21 +885,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65f053d805df8f74882cc2b8140626dc
-      internalID: 67204199
+      spriteID: 232d4605057e5d74eb40bf7ceff1beed
+      internalID: -540022974
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x224y352-w32h32
+      name: tileset-cliff_33
       rect:
         serializedVersion: 2
         x: 224
         y: 352
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -1611,21 +907,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0879ba4ed1f4cb84eb9abff8b8882b84
-      internalID: -1047516144
+      spriteID: a898d6c9e376f594e9f80a375f257fb8
+      internalID: 1528255135
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x256y352-w32h32
+      name: tileset-cliff_34
       rect:
         serializedVersion: 2
         x: 256
         y: 352
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -1633,21 +929,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3775db69186b21f40b015bf35a15c383
-      internalID: -46146253
+      spriteID: 5b9887694d7415f4e98d47615a4bbe7c
+      internalID: 1349327638
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x288y352-w32h32
+      name: tileset-cliff_35
       rect:
         serializedVersion: 2
         x: 288
         y: 352
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -1655,21 +951,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1a11dff33a0b674f92854e68e82eab4
-      internalID: -599539375
+      spriteID: 3710592c26a587346a6751b8a1181eca
+      internalID: 1748281905
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x320y352-w32h32
+      name: tileset-cliff_36
       rect:
         serializedVersion: 2
         x: 320
         y: 352
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -1677,21 +973,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb59cc58420bf4942928eb883625569e
-      internalID: -1929222838
+      spriteID: 23cb700c75347e04ebea2031dc9a7534
+      internalID: -1093832426
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x352y352-w32h32
+      name: tileset-cliff_37
       rect:
         serializedVersion: 2
         x: 352
         y: 352
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -1699,109 +995,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e78cadd95441b61418f5e5dd8092d42b
-      internalID: -1042835450
+      spriteID: 683575cfc1c73eb42b2bd2e589206e6f
+      internalID: 791356576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x384y352-w32h32
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 352
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a6232afbf8d0281459c2edb51465771d
-      internalID: -1528911059
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x416y352-w32h32
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 352
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f5b486e91356014bbba4386d6e90b2f
-      internalID: 2058094833
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x448y352-w32h32
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 352
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b4e263cf034672245ad78153d2c74024
-      internalID: -671957901
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x480y352-w32h32
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 352
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 929f6a3ab8ee905429434e6f040d1bfb
-      internalID: -945257660
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x0y320-w32h32
+      name: tileset-cliff_38
       rect:
         serializedVersion: 2
         x: 0
         y: 320
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -1809,21 +1017,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86633fadeb9d7394b924bb5b9d76c194
-      internalID: 801193976
+      spriteID: 91192f084d8387b4eb34ceb4aa570968
+      internalID: -995555411
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x32y320-w32h32
+      name: tileset-cliff_39
       rect:
         serializedVersion: 2
         x: 32
         y: 320
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -1831,21 +1039,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df62994730eb96949b1b6e10b9e4b4eb
-      internalID: -328199628
+      spriteID: ccf7e9b1dcc44e644958e9685306630d
+      internalID: 1683786496
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x64y320-w32h32
+      name: tileset-cliff_40
       rect:
         serializedVersion: 2
         x: 64
         y: 320
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -1853,21 +1061,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64f3fafa75eb774419534834bbf18062
-      internalID: 834558143
+      spriteID: 0cb7f613d1d1332478ee16ca63298215
+      internalID: -278010096
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x96y320-w32h32
+      name: tileset-cliff_41
       rect:
         serializedVersion: 2
         x: 96
         y: 320
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -1875,21 +1083,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ba9a5da408d879459d1df8074dce2fe
-      internalID: -274366174
+      spriteID: b0c6ed9a4c6266245b3565617db4d269
+      internalID: 477160677
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x128y320-w32h32
+      name: tileset-cliff_42
       rect:
         serializedVersion: 2
         x: 128
         y: 320
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -1897,21 +1105,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62a916fb450f89d48b867040d373b433
-      internalID: -1705846145
+      spriteID: 5e269117970a3ac4ebdc7bd5a7c8e566
+      internalID: -2013404300
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x160y320-w32h32
+      name: tileset-cliff_43
       rect:
         serializedVersion: 2
         x: 160
         y: 320
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -1919,21 +1127,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0559257258231a4ea6247570eedf881
-      internalID: 899873213
+      spriteID: d85c0ac39d4dfd041a6b0ce4a929bbfd
+      internalID: 116767431
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x192y320-w32h32
+      name: tileset-cliff_44
       rect:
         serializedVersion: 2
         x: 192
         y: 320
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -1941,21 +1149,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7288fdc275525446904436c72fc87f8
-      internalID: -809468460
+      spriteID: 182737a407e1beb49ab32981c66a03a3
+      internalID: -2111832612
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x224y320-w32h32
+      name: tileset-cliff_45
       rect:
         serializedVersion: 2
         x: 224
         y: 320
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -1963,21 +1171,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71314879a810b9f42a7c5d93e9336134
-      internalID: -1456890531
+      spriteID: 299cfbbea2a3e29409303a7cb1f92ba8
+      internalID: -1907082613
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x256y320-w32h32
+      name: tileset-cliff_46
       rect:
         serializedVersion: 2
         x: 256
         y: 320
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -1985,21 +1193,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebd0d904d22134949a2460a51599db04
-      internalID: -1569260097
+      spriteID: 58691c27a52efae43a70a73ece1c13e3
+      internalID: 1352268192
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x288y320-w32h32
+      name: tileset-cliff_47
       rect:
         serializedVersion: 2
         x: 288
         y: 320
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -2007,21 +1215,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a29a07c02e02a146b58f7f5253c302e
-      internalID: -267595923
+      spriteID: a234ef71a128867429666788d0688c8e
+      internalID: -1646985521
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x320y320-w32h32
+      name: tileset-cliff_48
       rect:
         serializedVersion: 2
         x: 320
         y: 320
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -2029,21 +1237,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ac81f0876abb1a4f99fc50ac67f0cdb
-      internalID: 2078479064
+      spriteID: 448f8fe3d87b1cd4c9f649fb0ffa3df2
+      internalID: 1740123669
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x352y320-w32h32
+      name: tileset-cliff_49
       rect:
         serializedVersion: 2
         x: 352
         y: 320
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -2051,131 +1259,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32eccbddff155e14b87241dd724f70de
-      internalID: 2102005776
+      spriteID: ba1f52fbe9c588548889425403710150
+      internalID: 654299329
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x384y320-w32h32
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 320
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 69b697899f5c8284597c1e59105c42ac
-      internalID: 486013015
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x416y320-w32h32
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 320
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 905c442a18bdb164c967b3a3caed08fb
-      internalID: -984229196
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x448y320-w32h32
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 320
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 56cc128a08b0c994c8c7d261f7f84436
-      internalID: -443123502
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x480y320-w32h32
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 320
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 987464e6650638d4c8c939b6bd6c92e4
-      internalID: -508748524
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x0y288-w32h32
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 288
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1ccc5ebb1f31461498ee656816f1695f
-      internalID: -1288625248
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x32y288-w32h32
+      name: tileset-cliff_50
       rect:
         serializedVersion: 2
         x: 32
         y: 288
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -2183,21 +1281,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8464ed25cd262e64f9b6805b138a2eb5
-      internalID: 1349201806
+      spriteID: 8e9fee5618782c8499c2d2e74f6df3ab
+      internalID: 1648037960
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x64y288-w32h32
+      name: tileset-cliff_51
       rect:
         serializedVersion: 2
         x: 64
         y: 288
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -2205,21 +1303,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 422d8f243b010f94cbb8f78aad99828e
-      internalID: -1046090751
+      spriteID: 38f9a388b78b8994699a0437f9ae4e0e
+      internalID: 1535475821
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x96y288-w32h32
+      name: tileset-cliff_52
       rect:
         serializedVersion: 2
         x: 96
         y: 288
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -2227,43 +1325,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e0ad87fcba07584cb5b364e07555ead
-      internalID: -1432872070
+      spriteID: b5176354b7c1f7345ac2a1c6dd76012a
+      internalID: -1915714400
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x128y288-w32h32
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 288
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 873929906ee9d574c8480f65d2742fd3
-      internalID: -963171505
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x160y288-w32h32
+      name: tileset-cliff_53
       rect:
         serializedVersion: 2
         x: 160
         y: 288
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -2271,21 +1347,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ed8ef37f0ce3804799e80d242a37860
-      internalID: -2043872500
+      spriteID: 3905883dd979b514cb19a10560f2fc44
+      internalID: 726385216
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x192y288-w32h32
+      name: tileset-cliff_54
       rect:
         serializedVersion: 2
         x: 192
         y: 288
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -2293,21 +1369,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96e2c6b993a757d4097e02b64be0cd9c
-      internalID: 70060488
+      spriteID: 8c74731cc568a1445baac162538e9d18
+      internalID: 1060653480
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x224y288-w32h32
+      name: tileset-cliff_55
       rect:
         serializedVersion: 2
         x: 224
         y: 288
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -2315,21 +1391,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9eb1ab9b9e14c4644b38c47df08fbe7d
-      internalID: -1237627433
+      spriteID: 1e3ade4917198ac44805548875de7f65
+      internalID: -52151009
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x256y288-w32h32
+      name: tileset-cliff_56
       rect:
         serializedVersion: 2
         x: 256
         y: 288
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -2337,1231 +1413,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c76852f499d1d24489ae14a17c30f11
-      internalID: -1767530500
+      spriteID: 33c3f0d594762684eb039c1f4b1c019c
+      internalID: -941374804
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x288y288-w32h32
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 288
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 124ada5d2ef42634d9997266d8ac8684
-      internalID: -1295978613
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x320y288-w32h32
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 288
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b9f9ba1c3be75ef45b784613a102eff2
-      internalID: 1813454383
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x352y288-w32h32
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 288
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b19bee6dc47770b46a38cb6995372f8d
-      internalID: 1513226180
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x384y288-w32h32
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 288
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5fbc40359b828f04e8adabcc536718c2
-      internalID: -528046117
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x416y288-w32h32
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 288
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e5f0c743e14ce624f86d5329314498c7
-      internalID: 1958585496
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x448y288-w32h32
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 288
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7f1d7930eab1cfe46aab047fce89fa8d
-      internalID: -2120329481
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x480y288-w32h32
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 288
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 73cd365699ecd5a49b92526c6f15fb81
-      internalID: 1813601153
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x0y256-w32h32
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 256
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b18899ffea6aa4c4bbfa15b1cbfb79ee
-      internalID: -1604214926
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x32y256-w32h32
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 256
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 35a4fc67c73c12a4292f4262410da8d3
-      internalID: 467898669
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x64y256-w32h32
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 256
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c07ba20ea6892ee4b899e036ede6f10d
-      internalID: -1367615441
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x96y256-w32h32
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 256
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eb352f6f87587ef43908c9303bbceb05
-      internalID: 1799131618
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x128y256-w32h32
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 256
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 28e0afa3152c22f4b8a2a580d6d8882c
-      internalID: 527336217
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x160y256-w32h32
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 256
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b32251f3cdb4c79489d88615c024abd2
-      internalID: -867347361
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x192y256-w32h32
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 256
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0f2a34a9ce916384b9ec3fd295e9b93d
-      internalID: 527478674
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x224y256-w32h32
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 256
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6f6f5b1e80d6e174a9299d3c65add8ce
-      internalID: 158036802
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x256y256-w32h32
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 256
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ebc9f03d944dc4f44b7dd299d191b762
-      internalID: -911403082
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x288y256-w32h32
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 256
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4f28d2b27d22e344f88c2d6b2a6ee7c2
-      internalID: -310320486
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x320y256-w32h32
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 256
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c9911b5e813665f458f97b2e40be0498
-      internalID: -1434629143
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x352y256-w32h32
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 256
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 131b283165822e440a01d2b9652ef271
-      internalID: -226467691
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x384y256-w32h32
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 256
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 64dde489099ee9041a4ecbf0b8d60a56
-      internalID: 1594736624
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x416y256-w32h32
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 256
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c35e5be1de87462488e64beaa66dad66
-      internalID: -314816821
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x448y256-w32h32
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 256
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 11acf1e8b5ce9114192abcbd4eb50aa5
-      internalID: 202384183
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x480y256-w32h32
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 256
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 50e53dd1645c1294bad288287d3d110c
-      internalID: 1460906983
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x0y224-w32h32
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 224
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 37e930200a3ef22408c515d340540f40
-      internalID: 2078405771
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x32y224-w32h32
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 224
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8cd5123f7106ef5419bada51c9bc7381
-      internalID: 1123990566
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x64y224-w32h32
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 224
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1269795e2cfbd36419ca992532e0e72b
-      internalID: -618418263
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x96y224-w32h32
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 224
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1c4aaf6ecc38f864bba32c3e52bcb472
-      internalID: 1014643483
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x128y224-w32h32
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 224
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d68cd91c15bf0d94e88be04232404e5c
-      internalID: -1964285091
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x160y224-w32h32
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 224
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f525132f6c295b64782daa9b75ff06f7
-      internalID: -1760895031
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x192y224-w32h32
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 224
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a4190cc1f56a6c4e91d832a07e08d65
-      internalID: 575293468
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x224y224-w32h32
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 224
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 781513eace7a5b1429fb428c223d1955
-      internalID: 1279229479
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x256y224-w32h32
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 224
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 418ae153d33fb0e489880f9360828cc4
-      internalID: 215721055
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x288y224-w32h32
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 224
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0a358fe749d35264db6f87bdfe75d744
-      internalID: 1134112682
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x320y224-w32h32
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 224
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6dae531074874ec488ff30cc68342f5a
-      internalID: -1065727633
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x352y224-w32h32
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 224
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b2bc080ab78e4ae4b8a58bc696688856
-      internalID: 203637738
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x384y224-w32h32
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 224
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e9d01ee1c2e024446a0d9979b5456767
-      internalID: -1449505297
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x416y224-w32h32
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 224
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 74a1eb21a2dacc14bb0648a51a6b5b0a
-      internalID: -2133219793
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x448y224-w32h32
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 224
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1d039067f7347044fadcf7bceef2fd76
-      internalID: -401438401
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x480y224-w32h32
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 224
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2bcb027c030c22640a79e2e15bee3680
-      internalID: -2072724577
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x0y192-w32h32
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 192
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5520248db5e6a1845b0f3284cb1fb7e9
-      internalID: 52929911
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x32y192-w32h32
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 192
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cf6b3d9981c6bf64ca05f4c746c34d38
-      internalID: -1521738452
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x64y192-w32h32
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 192
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2cb1bda6625aeb24db84af3c01bbaf92
-      internalID: 1944979501
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x96y192-w32h32
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 192
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a320af3e98a388349a2d8391f9cc43df
-      internalID: -1953922175
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x128y192-w32h32
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 192
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 90b25f69c9193884e98cc96edbd295c3
-      internalID: -37349646
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x160y192-w32h32
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 192
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 658efc0c949be43438096304a481d88d
-      internalID: 1377956162
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x192y192-w32h32
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 192
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 44023d889cacb1b45bea6370f60f6f28
-      internalID: -1714539309
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x224y192-w32h32
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 192
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d102cb5886a1ddc488803bce383ec85c
-      internalID: 69280338
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x256y192-w32h32
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 192
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5b56e6f9a0cf2b5478507cae73c69a2a
-      internalID: -1924507345
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x288y192-w32h32
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 192
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4419f53c04c977049b6ae2924a2bfac9
-      internalID: 1836356189
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x320y192-w32h32
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 192
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a39c910666aae6b4d82c2f05e3812d30
-      internalID: 1416320203
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x352y192-w32h32
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 192
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c20dd7236e617ec4f96f1cb25dd25684
-      internalID: 1203028348
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x384y192-w32h32
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 192
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1a9797a190a23cc4f85f0b6a8be6250a
-      internalID: 798674983
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x416y192-w32h32
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 192
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af1b9fc61b96f1b429a8e37613997cd9
-      internalID: 2073071616
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x448y192-w32h32
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 192
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 32cc5a4126912b34c8e9018316c46134
-      internalID: -323059224
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x480y192-w32h32
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 192
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3aa28cde2f2aad64992a7b67a805d541
-      internalID: -666370046
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x0y160-w32h32
+      name: tileset-cliff_57
       rect:
         serializedVersion: 2
         x: 0
         y: 160
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -3569,21 +1435,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9644bbe4959d72b44bafd5a4dd10b3e9
-      internalID: -39390379
+      spriteID: b51ac55ccc14fa243ab3e570a70745f7
+      internalID: 1620709118
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x32y160-w32h32
+      name: tileset-cliff_58
       rect:
         serializedVersion: 2
         x: 32
         y: 160
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -3591,21 +1457,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2db01e2da12b53488134f33d769e823
-      internalID: -785338853
+      spriteID: a27c1d52d13cf4948945b9f8f3d98b29
+      internalID: -1723695216
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x64y160-w32h32
+      name: tileset-cliff_59
       rect:
         serializedVersion: 2
         x: 64
         y: 160
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -3613,21 +1479,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de6e0e6df6544f345a42b96adf1fba6d
-      internalID: 1942182130
+      spriteID: 94dda8ad3b7bb6142823fe20f969824e
+      internalID: 1102197059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x96y160-w32h32
+      name: tileset-cliff_60
       rect:
         serializedVersion: 2
         x: 96
         y: 160
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -3635,21 +1501,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ce1ff1145f15cf47a92a833c20ef216
-      internalID: -1654170542
+      spriteID: f14386d0a163a5b4fb99eb26d124230d
+      internalID: 80657119
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x128y160-w32h32
+      name: tileset-cliff_61
       rect:
         serializedVersion: 2
         x: 128
         y: 160
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -3657,21 +1523,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f5ffa45f3dd9954a81f245a4a19e48c
-      internalID: -664502680
+      spriteID: 3d78675cad889064283afe025b498b7c
+      internalID: 468520890
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x160y160-w32h32
+      name: tileset-cliff_62
       rect:
         serializedVersion: 2
         x: 160
         y: 160
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -3679,43 +1545,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc6a8fa99c475ea43b77b0d90caebb6e
-      internalID: 1845206711
+      spriteID: 63523fcb5eef4d540958d102f3a2b6b5
+      internalID: -1794689540
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x192y160-w32h32
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 160
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5530c46eab3065f498c24ecfc817ed2a
-      internalID: 605801890
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x224y160-w32h32
+      name: tileset-cliff_63
       rect:
         serializedVersion: 2
         x: 224
         y: 160
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -3723,21 +1567,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 294a09a76bc66a84dbe9a4d0163714be
-      internalID: 1823143612
+      spriteID: 499e114433c9b6b45832e4aaee74bddd
+      internalID: -1679598312
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x256y160-w32h32
+      name: tileset-cliff_64
       rect:
         serializedVersion: 2
         x: 256
         y: 160
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -3745,21 +1589,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e12be019a11f1b34eba139b07d4a846a
-      internalID: 1450225661
+      spriteID: 2f81412c9316e1a44b714fc500765461
+      internalID: 729183239
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x288y160-w32h32
+      name: tileset-cliff_65
       rect:
         serializedVersion: 2
         x: 288
         y: 160
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -3767,21 +1611,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1de61e97d0f622b48a7e87c166654c41
-      internalID: 760628862
+      spriteID: a709650a07ddd6c4aba7a0776535dcdc
+      internalID: -1334041546
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x320y160-w32h32
+      name: tileset-cliff_66
       rect:
         serializedVersion: 2
         x: 320
         y: 160
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -3789,21 +1633,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8764970b31f250845b1fbba9a1066e11
-      internalID: 570087784
+      spriteID: 15926440ceaec944cb7f0ce27eb912b0
+      internalID: -1843321878
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x352y160-w32h32
+      name: tileset-cliff_67
       rect:
         serializedVersion: 2
         x: 352
         y: 160
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -3811,21 +1655,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af65f1afb567c0144bcf1a7983931aa1
-      internalID: -277176875
+      spriteID: dab1c81ef84c3904a92d475ffed232bb
+      internalID: 1206973547
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x384y160-w32h32
+      name: tileset-cliff_68
       rect:
         serializedVersion: 2
         x: 384
         y: 160
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -3833,87 +1677,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2bf28376e98389345aa993aa23496729
-      internalID: 1236625695
+      spriteID: f1239bb0d3cb24a4cac195841ecc372e
+      internalID: 860238931
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x416y160-w32h32
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 160
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 16759719d2f364f4784ab235649b2416
-      internalID: -318389027
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x448y160-w32h32
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 160
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b5a53dc25b7339043b7253feff0dcef7
-      internalID: 647819938
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x480y160-w32h32
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 160
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1ebcc82b2c7702a418c3664a6426264d
-      internalID: 445963708
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x0y128-w32h32
+      name: tileset-cliff_69
       rect:
         serializedVersion: 2
         x: 0
         y: 128
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -3921,21 +1699,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff849da23d1579547b9de2e48d239567
-      internalID: -2002015245
+      spriteID: edc9b90f013fae140a20f4171004ed36
+      internalID: 2099377127
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x32y128-w32h32
+      name: tileset-cliff_70
       rect:
         serializedVersion: 2
         x: 32
         y: 128
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -3943,21 +1721,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 719fc9ee295c9bc488844456091cfdf8
-      internalID: -1437375207
+      spriteID: d24e71ee53643be43af393f05eec84c5
+      internalID: 1902990534
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x64y128-w32h32
+      name: tileset-cliff_71
       rect:
         serializedVersion: 2
         x: 64
         y: 128
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -3965,21 +1743,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8ebcac939b2281428ce2bab807ae571
-      internalID: 1154574008
+      spriteID: 10f261134f6b85248a9c62c3a0b31088
+      internalID: 610954019
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x96y128-w32h32
+      name: tileset-cliff_72
       rect:
         serializedVersion: 2
         x: 96
         y: 128
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -3987,21 +1765,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3b2e0b68d8556443aa6b0251a293ba0
-      internalID: -1780388041
+      spriteID: f570978f1f49d624a830fb0c5ba854ab
+      internalID: -2115146683
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x128y128-w32h32
+      name: tileset-cliff_73
       rect:
         serializedVersion: 2
         x: 128
         y: 128
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -4009,21 +1787,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c32c71a795305444995b1fc9b171d427
-      internalID: 1529663155
+      spriteID: efdc40cf01d8600449fdaf228d31bc68
+      internalID: 1223581242
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x160y128-w32h32
+      name: tileset-cliff_74
       rect:
         serializedVersion: 2
         x: 160
         y: 128
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -4031,43 +1809,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04bea6302cbc1da4fa34cafd58049a4c
-      internalID: 1383431092
+      spriteID: 0734538cf5c09c34ba83d7e1182346ce
+      internalID: -704658199
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x192y128-w32h32
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 128
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 16c47c600167eb143a4d0504990f7686
-      internalID: 100604587
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x224y128-w32h32
+      name: tileset-cliff_75
       rect:
         serializedVersion: 2
         x: 224
         y: 128
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -4075,21 +1831,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48ed015c0869bb142b25a8b9cde78c8c
-      internalID: 1935081154
+      spriteID: 32394d9078974b44cb77cc5daa74b6aa
+      internalID: -1273276954
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x256y128-w32h32
+      name: tileset-cliff_76
       rect:
         serializedVersion: 2
         x: 256
         y: 128
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -4097,21 +1853,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8cf9f9923e19ee641bd0cb68f3cc95a2
-      internalID: 2030844505
+      spriteID: d37780afb265b224290912d43d786fbf
+      internalID: -303705749
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x288y128-w32h32
+      name: tileset-cliff_77
       rect:
         serializedVersion: 2
         x: 288
         y: 128
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -4119,21 +1875,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef9e034087b2b3247be6e7bb09b12336
-      internalID: 1665982957
+      spriteID: ccdf8e203b1706a449d563d8851f37c5
+      internalID: 345539859
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x320y128-w32h32
+      name: tileset-cliff_78
       rect:
         serializedVersion: 2
         x: 320
         y: 128
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -4141,21 +1897,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36192197422a70445841a1aaa2395ce0
-      internalID: -474367632
+      spriteID: c58f0ff4b6e79f2488a01e3ae03315c5
+      internalID: 1287698553
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x352y128-w32h32
+      name: tileset-cliff_79
       rect:
         serializedVersion: 2
         x: 352
         y: 128
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -4163,21 +1919,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6c1157e2b7415940a07b2150b85ea27
-      internalID: -910316555
+      spriteID: e9b55be1a9e84674eb0ed029cc857e13
+      internalID: 960143078
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x384y128-w32h32
+      name: tileset-cliff_80
       rect:
         serializedVersion: 2
         x: 384
         y: 128
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -4185,439 +1941,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a070c5f1a777de149bfa53aa4ca95ed8
-      internalID: 580258793
+      spriteID: e63cf261b34fe234fae7b033e766743c
+      internalID: 637959632
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x416y128-w32h32
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 128
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 73294e49683d2b24fa3d1cd7534e0076
-      internalID: -757257541
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x448y128-w32h32
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 128
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d720ea3072e5a94ca0624b676cb7170
-      internalID: -656050603
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x480y128-w32h32
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 128
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 175e6d0dded85e54180f43fa8e3e331f
-      internalID: -121156939
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x0y96-w32h32
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 96
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 050c74835e779d543b820a0d89a0bd0d
-      internalID: -2005865790
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x32y96-w32h32
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 96
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 93e81bc862072f0449554ea0dd57dcb9
-      internalID: -1869373558
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x64y96-w32h32
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 96
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 064512fc259036046bf290f3b622de2e
-      internalID: -631600153
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x96y96-w32h32
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 96
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 973a7d14f6f88654daf833f4831152a2
-      internalID: -1686377829
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x128y96-w32h32
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 96
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed6130c227be96646bd06db4e36a971b
-      internalID: 433433044
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x160y96-w32h32
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 96
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8c0152b53cb6f97448bf96b1fe8a6ceb
-      internalID: -1559360896
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x192y96-w32h32
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 96
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 41234685138012c4eba57c139fd84d22
-      internalID: 2050110266
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x224y96-w32h32
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 96
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9c34509ec99970f48b22ebe8f0e36b07
-      internalID: -1371036730
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x256y96-w32h32
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 96
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 374fa557f74308d468b94402f6c2960b
-      internalID: 985026393
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x288y96-w32h32
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 96
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5529cce3c7e79974fa61d90dea4813e0
-      internalID: -1832161024
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x320y96-w32h32
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 96
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 257a21437e5f0b145a6959ae7e5bc250
-      internalID: -1161910725
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x352y96-w32h32
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 96
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f9ac6d32d757c304bb099861e21fc359
-      internalID: -2033696921
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x384y96-w32h32
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 96
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3e04b6db1b29f8747b2577fc67358fb8
-      internalID: 1147076867
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x416y96-w32h32
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 96
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cdd3e11071cf9694d8a37102899ffd81
-      internalID: -394882094
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x448y96-w32h32
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 96
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4f7746e970116bd4b8aedb58a5e5cbbc
-      internalID: 637977542
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x480y96-w32h32
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 96
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6930326a7209d2b4a9dd9bf93006242b
-      internalID: 430678256
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x0y64-w32h32
+      name: tileset-cliff_81
       rect:
         serializedVersion: 2
         x: 0
         y: 64
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -4625,21 +1963,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94fa0f9cacd1ddb4a93b4bb7eda7b01e
-      internalID: 912145035
+      spriteID: bce6ee56c1b12df40a394629d675b170
+      internalID: -937329594
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x32y64-w32h32
+      name: tileset-cliff_82
       rect:
         serializedVersion: 2
         x: 32
         y: 64
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -4647,21 +1985,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2570ec7bea0e9614fbcaa08f704a5d04
-      internalID: -1556291832
+      spriteID: f7944d2a5a77074468349a05f7c0ab12
+      internalID: 853535367
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x64y64-w32h32
+      name: tileset-cliff_83
       rect:
         serializedVersion: 2
         x: 64
         y: 64
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -4669,21 +2007,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98d0c4b6e38494f40812708b804e52a0
-      internalID: -1979084533
+      spriteID: 297d8cb9b02b2af46a133a7b9f2dc016
+      internalID: -266092490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x96y64-w32h32
+      name: tileset-cliff_84
       rect:
         serializedVersion: 2
         x: 96
         y: 64
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -4691,21 +2029,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a914d57cd3186c408a72edad34c3aed
-      internalID: -901481692
+      spriteID: 779566a43f20a4844ade370cababff87
+      internalID: 963746102
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x128y64-w32h32
+      name: tileset-cliff_85
       rect:
         serializedVersion: 2
         x: 128
         y: 64
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -4713,21 +2051,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 999bf2cb064f461449f0a0c9ac81087f
-      internalID: -1656317125
+      spriteID: ef45a2e3e3d9dd4408b483b1b6976926
+      internalID: 1023160947
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x160y64-w32h32
+      name: tileset-cliff_86
       rect:
         serializedVersion: 2
         x: 160
         y: 64
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -4735,21 +2073,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db749860b0f8b38408da7fee8b60b6a8
-      internalID: -1837744678
+      spriteID: e1e160e5732a0824e87cda5ef087df20
+      internalID: -1423442984
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x192y64-w32h32
+      name: tileset-cliff_87
       rect:
         serializedVersion: 2
         x: 192
         y: 64
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -4757,21 +2095,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 043267a15037fd541965137b86224d71
-      internalID: -722702536
+      spriteID: f52c6560103266a4a9d6279bfb934851
+      internalID: -1521323697
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x224y64-w32h32
+      name: tileset-cliff_88
       rect:
         serializedVersion: 2
         x: 224
         y: 64
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -4779,21 +2117,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 676f2e898742ee74cb86015d2711179e
-      internalID: -1853117768
+      spriteID: 069246b6d10ff65419ef83ce0be197b2
+      internalID: 716575640
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x256y64-w32h32
+      name: tileset-cliff_89
       rect:
         serializedVersion: 2
         x: 256
         y: 64
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -4801,21 +2139,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62c74d8c84514f446abeddaa3d557a01
-      internalID: -218826501
+      spriteID: 89d4d20cee58557419b4df60882975bc
+      internalID: 1112278155
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x288y64-w32h32
+      name: tileset-cliff_90
       rect:
         serializedVersion: 2
         x: 288
         y: 64
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -4823,21 +2161,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0cf994ccfdeba134c8797bcf312cd11d
-      internalID: 1766354304
+      spriteID: 15e36fb834a61014399d1ab80ef52a6c
+      internalID: 1446072753
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x320y64-w32h32
+      name: tileset-cliff_91
       rect:
         serializedVersion: 2
         x: 320
         y: 64
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -4845,21 +2183,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82417fc7eeb8e224287a87e7604496e7
-      internalID: 1172221498
+      spriteID: 843ec075344ad7f43b035f2def0fc3dc
+      internalID: -1328172078
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x352y64-w32h32
+      name: tileset-cliff_92
       rect:
         serializedVersion: 2
         x: 352
         y: 64
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -4867,21 +2205,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb1dd3b0b26b5eb41ace19b69a0a37aa
-      internalID: 743941947
+      spriteID: 91620f30f8bf82144b2282aa7996ec38
+      internalID: -840013719
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x384y64-w32h32
+      name: tileset-cliff_93
       rect:
         serializedVersion: 2
         x: 384
         y: 64
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -4889,87 +2227,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bba2bfc45974aa347841b4a6117f7f65
-      internalID: 2144618544
+      spriteID: 3c8ec14a611463b4bb431aec800f1b0f
+      internalID: 1165309382
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x416y64-w32h32
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 64
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 30b53dc0885809e44b9d88e2d9d5da9a
-      internalID: 288945270
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x448y64-w32h32
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 64
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2fbd9b7c2efdc8e4a95926e8e1c5ed57
-      internalID: -862581772
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x480y64-w32h32
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 64
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f74b24e2314a6524b957ba68e289e4a7
-      internalID: 1696745233
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x0y32-w32h32
+      name: tileset-cliff_94
       rect:
         serializedVersion: 2
         x: 0
         y: 32
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -4977,21 +2249,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e58cc71aa3ef5114a813dfae8ccd8ba1
-      internalID: 19030086
+      spriteID: a1dcbad7bacd0be4d9c352b6a04010dd
+      internalID: -79688622
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x32y32-w32h32
+      name: tileset-cliff_95
       rect:
         serializedVersion: 2
         x: 32
         y: 32
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -4999,21 +2271,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0e4f0c08bc03dc479a806a9316d9663
-      internalID: -1985722702
+      spriteID: 15b8385f05d7b9a429b1a31d6d9c18be
+      internalID: 1509745257
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x64y32-w32h32
+      name: tileset-cliff_96
       rect:
         serializedVersion: 2
         x: 64
         y: 32
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -5021,21 +2293,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea98cc227db183e4d9be767f8b75394f
-      internalID: -136432024
+      spriteID: fa7e0ed35b8fcf14489a4d0cd0a9f9ef
+      internalID: 1515769247
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x96y32-w32h32
+      name: tileset-cliff_97
       rect:
         serializedVersion: 2
         x: 96
         y: 32
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -5043,21 +2315,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d513257df8c35d84ab657471fffec8ce
-      internalID: 2016015947
+      spriteID: 1498bc2e589a67341a99f5a6b0114210
+      internalID: 868993790
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x128y32-w32h32
+      name: tileset-cliff_98
       rect:
         serializedVersion: 2
         x: 128
         y: 32
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -5065,21 +2337,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a4cd266749f2a7458055fb7f08d102e
-      internalID: -500427782
+      spriteID: 821ee8e3013152340b8e1bbbfb469c69
+      internalID: -1337260201
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x160y32-w32h32
+      name: tileset-cliff_99
       rect:
         serializedVersion: 2
         x: 160
         y: 32
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -5087,21 +2359,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef98c6bf4e19245409e454be9fb1a0ef
-      internalID: -874904069
+      spriteID: 46b00d3b468eb8d41848ca6433de30cd
+      internalID: -1120952370
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x192y32-w32h32
+      name: tileset-cliff_100
       rect:
         serializedVersion: 2
         x: 192
         y: 32
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -5109,21 +2381,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5085daf34ae18147a8e788e08f7ffe0
-      internalID: -1601158769
+      spriteID: 178aaeb4b93aded42a103e5881a8c0f1
+      internalID: -1051690428
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x224y32-w32h32
+      name: tileset-cliff_101
       rect:
         serializedVersion: 2
         x: 224
         y: 32
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -5131,21 +2403,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4604c5c36748c2142b5a213501d0575f
-      internalID: -522715208
+      spriteID: 386b95d28907c3a4890d7f374fc2be1a
+      internalID: 116010715
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x256y32-w32h32
+      name: tileset-cliff_102
       rect:
         serializedVersion: 2
         x: 256
         y: 32
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -5153,21 +2425,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d185427075cca44b822f490b5b6c7d1
-      internalID: -428109982
+      spriteID: 34b2e7a982e33f841a7d9c6f2f2033da
+      internalID: -1659042872
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x288y32-w32h32
+      name: tileset-cliff_103
       rect:
         serializedVersion: 2
         x: 288
         y: 32
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -5175,21 +2447,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5557290596a17b44398a47c0edfdde5c
-      internalID: -859159023
+      spriteID: e8a8471d14a6e4d449c51de0d894c4df
+      internalID: 539294110
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x320y32-w32h32
+      name: tileset-cliff_104
       rect:
         serializedVersion: 2
         x: 320
         y: 32
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -5197,21 +2469,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08c608098714d524ca1927f4a17adaa8
-      internalID: 930490814
+      spriteID: e81967417dbe9ea44b4c8c8d3c85a32a
+      internalID: -1864450874
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x352y32-w32h32
+      name: tileset-cliff_105
       rect:
         serializedVersion: 2
         x: 352
         y: 32
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -5219,21 +2491,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77d6fd9604973c4498373828f8241a1e
-      internalID: -123331839
+      spriteID: 04d6da88a5eee87438d7ca6291b56c96
+      internalID: -272094204
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: st2u_x384y32-w32h32
+      name: tileset-cliff_106
       rect:
         serializedVersion: 2
         x: 384
         y: 32
         width: 32
         height: 32
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -5241,426 +2513,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0be46bd9532c9424a963ab889d82d844
-      internalID: 636258310
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x416y32-w32h32
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 32
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e71924bf408304a42921447b3213cc23
-      internalID: 1040182123
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x448y32-w32h32
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 32
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5113ccb4505eedc4bbf3a9266f9e54cd
-      internalID: -1128115643
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x480y32-w32h32
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 32
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aaa737af7eed6a34b9361a66843d7861
-      internalID: -1621508966
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x0y0-w32h32
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 51a52b270aca00f44a57fabbd0afc049
-      internalID: 1195516936
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x32y0-w32h32
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0dfdbd60ea61ded439c60512a32f40af
-      internalID: 1828976011
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x64y0-w32h32
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6756de3f3ba23f74bb90c5993ea71e2f
-      internalID: -672190391
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x96y0-w32h32
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f21d5c96ad52a4c48a1dc5348489b227
-      internalID: 563079841
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x128y0-w32h32
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 423fd65fe01da7c4fb46784b471b9cfc
-      internalID: -478123971
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x160y0-w32h32
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dbc92c668cc2f1b409b9f9de7a9c21f3
-      internalID: 387555598
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x192y0-w32h32
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 36905f009f0b8d24fbc2a9bf9a2397e1
-      internalID: -377035988
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x224y0-w32h32
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 0
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ea8aed59f2792574aa4969544d0c87a9
-      internalID: -1357347561
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x256y0-w32h32
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 75479e4b3c58ff746951ec8c8dc2b814
-      internalID: -517311010
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x288y0-w32h32
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 0
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9219d249b0fc5ed4b899e41ab6e688cc
-      internalID: -1764563518
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x320y0-w32h32
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aa1d9d8978a94024fae554bd0421685e
-      internalID: 1892179510
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x352y0-w32h32
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 0
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b02bb8c51a2b4684b8164a341ef3c4e7
-      internalID: -839235368
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x384y0-w32h32
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c6bba81cf2bdd3745ae90b5bbb728309
-      internalID: -1522036399
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x416y0-w32h32
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 0
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3d574b60676036c4893b313390fd6601
-      internalID: -279660584
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x448y0-w32h32
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 0
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 48a0cb384d7d7364ca1a8bee457bf073
-      internalID: -1878967672
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: st2u_x480y0-w32h32
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 0
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3afd942466600ec4f9cff6cb537d0ef6
-      internalID: 1103339711
+      spriteID: de057922bcaabf34787ee69f2792d512
+      internalID: 33378251
       vertices: []
       indices: 
       edges: []
@@ -5679,256 +2533,113 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      st2u_x0y0-w32h32: 1195516936
-      st2u_x0y128-w32h32: -2002015245
-      st2u_x0y160-w32h32: -39390379
-      st2u_x0y192-w32h32: 52929911
-      st2u_x0y224-w32h32: 2078405771
-      st2u_x0y256-w32h32: -1604214926
-      st2u_x0y288-w32h32: -1288625248
-      st2u_x0y32-w32h32: 19030086
-      st2u_x0y320-w32h32: 801193976
-      st2u_x0y352-w32h32: 566673289
-      st2u_x0y384-w32h32: 1028226283
-      st2u_x0y416-w32h32: -557453705
-      st2u_x0y448-w32h32: -855460662
-      st2u_x0y64-w32h32: 912145035
-      st2u_x0y96-w32h32: -2005865790
-      st2u_x128y0-w32h32: -478123971
-      st2u_x128y128-w32h32: 1529663155
-      st2u_x128y160-w32h32: -664502680
-      st2u_x128y192-w32h32: -37349646
-      st2u_x128y224-w32h32: -1964285091
-      st2u_x128y256-w32h32: 527336217
-      st2u_x128y288-w32h32: -963171505
-      st2u_x128y32-w32h32: -500427782
-      st2u_x128y320-w32h32: -1705846145
-      st2u_x128y352-w32h32: 1437651832
-      st2u_x128y384-w32h32: -1549116070
-      st2u_x128y416-w32h32: 351938048
-      st2u_x128y448-w32h32: 1459333683
-      st2u_x128y64-w32h32: -1656317125
-      st2u_x128y96-w32h32: 433433044
-      st2u_x160y0-w32h32: 387555598
-      st2u_x160y128-w32h32: 1383431092
-      st2u_x160y160-w32h32: 1845206711
-      st2u_x160y192-w32h32: 1377956162
-      st2u_x160y224-w32h32: -1760895031
-      st2u_x160y256-w32h32: -867347361
-      st2u_x160y288-w32h32: -2043872500
-      st2u_x160y32-w32h32: -874904069
-      st2u_x160y320-w32h32: 899873213
-      st2u_x160y352-w32h32: -1798293907
-      st2u_x160y384-w32h32: 2067078145
-      st2u_x160y416-w32h32: -937149890
-      st2u_x160y448-w32h32: -1640165434
-      st2u_x160y64-w32h32: -1837744678
-      st2u_x160y96-w32h32: -1559360896
-      st2u_x192y0-w32h32: -377035988
-      st2u_x192y128-w32h32: 100604587
-      st2u_x192y160-w32h32: 605801890
-      st2u_x192y192-w32h32: -1714539309
-      st2u_x192y224-w32h32: 575293468
-      st2u_x192y256-w32h32: 527478674
-      st2u_x192y288-w32h32: 70060488
-      st2u_x192y32-w32h32: -1601158769
-      st2u_x192y320-w32h32: -809468460
-      st2u_x192y352-w32h32: 67204199
-      st2u_x192y384-w32h32: 456381164
-      st2u_x192y416-w32h32: 1821219311
-      st2u_x192y448-w32h32: -1056758074
-      st2u_x192y64-w32h32: -722702536
-      st2u_x192y96-w32h32: 2050110266
-      st2u_x224y0-w32h32: -1357347561
-      st2u_x224y128-w32h32: 1935081154
-      st2u_x224y160-w32h32: 1823143612
-      st2u_x224y192-w32h32: 69280338
-      st2u_x224y224-w32h32: 1279229479
-      st2u_x224y256-w32h32: 158036802
-      st2u_x224y288-w32h32: -1237627433
-      st2u_x224y32-w32h32: -522715208
-      st2u_x224y320-w32h32: -1456890531
-      st2u_x224y352-w32h32: -1047516144
-      st2u_x224y384-w32h32: 1780378630
-      st2u_x224y416-w32h32: 787443163
-      st2u_x224y448-w32h32: 1694540691
-      st2u_x224y64-w32h32: -1853117768
-      st2u_x224y96-w32h32: -1371036730
-      st2u_x256y0-w32h32: -517311010
-      st2u_x256y128-w32h32: 2030844505
-      st2u_x256y160-w32h32: 1450225661
-      st2u_x256y192-w32h32: -1924507345
-      st2u_x256y224-w32h32: 215721055
-      st2u_x256y256-w32h32: -911403082
-      st2u_x256y288-w32h32: -1767530500
-      st2u_x256y32-w32h32: -428109982
-      st2u_x256y320-w32h32: -1569260097
-      st2u_x256y352-w32h32: -46146253
-      st2u_x256y384-w32h32: -1685183491
-      st2u_x256y416-w32h32: -133377605
-      st2u_x256y448-w32h32: -1337735081
-      st2u_x256y64-w32h32: -218826501
-      st2u_x256y96-w32h32: 985026393
-      st2u_x288y0-w32h32: -1764563518
-      st2u_x288y128-w32h32: 1665982957
-      st2u_x288y160-w32h32: 760628862
-      st2u_x288y192-w32h32: 1836356189
-      st2u_x288y224-w32h32: 1134112682
-      st2u_x288y256-w32h32: -310320486
-      st2u_x288y288-w32h32: -1295978613
-      st2u_x288y32-w32h32: -859159023
-      st2u_x288y320-w32h32: -267595923
-      st2u_x288y352-w32h32: -599539375
-      st2u_x288y384-w32h32: 1700289360
-      st2u_x288y416-w32h32: 230486494
-      st2u_x288y448-w32h32: -1439030802
-      st2u_x288y64-w32h32: 1766354304
-      st2u_x288y96-w32h32: -1832161024
-      st2u_x320y0-w32h32: 1892179510
-      st2u_x320y128-w32h32: -474367632
-      st2u_x320y160-w32h32: 570087784
-      st2u_x320y192-w32h32: 1416320203
-      st2u_x320y224-w32h32: -1065727633
-      st2u_x320y256-w32h32: -1434629143
-      st2u_x320y288-w32h32: 1813454383
-      st2u_x320y32-w32h32: 930490814
-      st2u_x320y320-w32h32: 2078479064
-      st2u_x320y352-w32h32: -1929222838
-      st2u_x320y384-w32h32: 153247425
-      st2u_x320y416-w32h32: -1994998868
-      st2u_x320y448-w32h32: -1706960426
-      st2u_x320y64-w32h32: 1172221498
-      st2u_x320y96-w32h32: -1161910725
-      st2u_x32y0-w32h32: 1828976011
-      st2u_x32y128-w32h32: -1437375207
-      st2u_x32y160-w32h32: -785338853
-      st2u_x32y192-w32h32: -1521738452
-      st2u_x32y224-w32h32: 1123990566
-      st2u_x32y256-w32h32: 467898669
-      st2u_x32y288-w32h32: 1349201806
-      st2u_x32y32-w32h32: -1985722702
-      st2u_x32y320-w32h32: -328199628
-      st2u_x32y352-w32h32: 723244879
-      st2u_x32y384-w32h32: -1355605950
-      st2u_x32y416-w32h32: 1050831486
-      st2u_x32y448-w32h32: 1881257870
-      st2u_x32y64-w32h32: -1556291832
-      st2u_x32y96-w32h32: -1869373558
-      st2u_x352y0-w32h32: -839235368
-      st2u_x352y128-w32h32: -910316555
-      st2u_x352y160-w32h32: -277176875
-      st2u_x352y192-w32h32: 1203028348
-      st2u_x352y224-w32h32: 203637738
-      st2u_x352y256-w32h32: -226467691
-      st2u_x352y288-w32h32: 1513226180
-      st2u_x352y32-w32h32: -123331839
-      st2u_x352y320-w32h32: 2102005776
-      st2u_x352y352-w32h32: -1042835450
-      st2u_x352y384-w32h32: -2105974858
-      st2u_x352y416-w32h32: -1332418432
-      st2u_x352y448-w32h32: -1499329285
-      st2u_x352y64-w32h32: 743941947
-      st2u_x352y96-w32h32: -2033696921
-      st2u_x384y0-w32h32: -1522036399
-      st2u_x384y128-w32h32: 580258793
-      st2u_x384y160-w32h32: 1236625695
-      st2u_x384y192-w32h32: 798674983
-      st2u_x384y224-w32h32: -1449505297
-      st2u_x384y256-w32h32: 1594736624
-      st2u_x384y288-w32h32: -528046117
-      st2u_x384y32-w32h32: 636258310
-      st2u_x384y320-w32h32: 486013015
-      st2u_x384y352-w32h32: -1528911059
-      st2u_x384y384-w32h32: 1658813620
-      st2u_x384y416-w32h32: -147031563
-      st2u_x384y448-w32h32: 1458908874
-      st2u_x384y64-w32h32: 2144618544
-      st2u_x384y96-w32h32: 1147076867
-      st2u_x416y0-w32h32: -279660584
-      st2u_x416y128-w32h32: -757257541
-      st2u_x416y160-w32h32: -318389027
-      st2u_x416y192-w32h32: 2073071616
-      st2u_x416y224-w32h32: -2133219793
-      st2u_x416y256-w32h32: -314816821
-      st2u_x416y288-w32h32: 1958585496
-      st2u_x416y32-w32h32: 1040182123
-      st2u_x416y320-w32h32: -984229196
-      st2u_x416y352-w32h32: 2058094833
-      st2u_x416y384-w32h32: -497808224
-      st2u_x416y416-w32h32: -581869074
-      st2u_x416y448-w32h32: 36061293
-      st2u_x416y64-w32h32: 288945270
-      st2u_x416y96-w32h32: -394882094
-      st2u_x448y0-w32h32: -1878967672
-      st2u_x448y128-w32h32: -656050603
-      st2u_x448y160-w32h32: 647819938
-      st2u_x448y192-w32h32: -323059224
-      st2u_x448y224-w32h32: -401438401
-      st2u_x448y256-w32h32: 202384183
-      st2u_x448y288-w32h32: -2120329481
-      st2u_x448y32-w32h32: -1128115643
-      st2u_x448y320-w32h32: -443123502
-      st2u_x448y352-w32h32: -671957901
-      st2u_x448y384-w32h32: 1758876444
-      st2u_x448y416-w32h32: 1856191157
-      st2u_x448y448-w32h32: 1268225705
-      st2u_x448y64-w32h32: -862581772
-      st2u_x448y96-w32h32: 637977542
-      st2u_x480y0-w32h32: 1103339711
-      st2u_x480y128-w32h32: -121156939
-      st2u_x480y160-w32h32: 445963708
-      st2u_x480y192-w32h32: -666370046
-      st2u_x480y224-w32h32: -2072724577
-      st2u_x480y256-w32h32: 1460906983
-      st2u_x480y288-w32h32: 1813601153
-      st2u_x480y32-w32h32: -1621508966
-      st2u_x480y320-w32h32: -508748524
-      st2u_x480y352-w32h32: -945257660
-      st2u_x480y384-w32h32: -632743546
-      st2u_x480y416-w32h32: -1766469403
-      st2u_x480y448-w32h32: -1108029165
-      st2u_x480y64-w32h32: 1696745233
-      st2u_x480y96-w32h32: 430678256
-      st2u_x64y0-w32h32: -672190391
-      st2u_x64y128-w32h32: 1154574008
-      st2u_x64y160-w32h32: 1942182130
-      st2u_x64y192-w32h32: 1944979501
-      st2u_x64y224-w32h32: -618418263
-      st2u_x64y256-w32h32: -1367615441
-      st2u_x64y288-w32h32: -1046090751
-      st2u_x64y32-w32h32: -136432024
-      st2u_x64y320-w32h32: 834558143
-      st2u_x64y352-w32h32: -1988803509
-      st2u_x64y384-w32h32: 221429747
-      st2u_x64y416-w32h32: 1841544457
-      st2u_x64y448-w32h32: 1243819701
-      st2u_x64y64-w32h32: -1979084533
-      st2u_x64y96-w32h32: -631600153
-      st2u_x96y0-w32h32: 563079841
-      st2u_x96y128-w32h32: -1780388041
-      st2u_x96y160-w32h32: -1654170542
-      st2u_x96y192-w32h32: -1953922175
-      st2u_x96y224-w32h32: 1014643483
-      st2u_x96y256-w32h32: 1799131618
-      st2u_x96y288-w32h32: -1432872070
-      st2u_x96y32-w32h32: 2016015947
-      st2u_x96y320-w32h32: -274366174
-      st2u_x96y352-w32h32: 616655917
-      st2u_x96y384-w32h32: -812530890
-      st2u_x96y416-w32h32: -862345665
-      st2u_x96y448-w32h32: -537145141
-      st2u_x96y64-w32h32: -901481692
-      st2u_x96y96-w32h32: -1686377829
       tileset-cliff_0: 7299694999105130351
       tileset-cliff_1: -3998209010168887389
+      tileset-cliff_10: 390077126
+      tileset-cliff_100: -1051690428
+      tileset-cliff_101: 116010715
+      tileset-cliff_102: -1659042872
+      tileset-cliff_103: 539294110
+      tileset-cliff_104: -1864450874
+      tileset-cliff_105: -272094204
+      tileset-cliff_106: 33378251
+      tileset-cliff_11: -230970072
+      tileset-cliff_12: 1926585019
+      tileset-cliff_13: -1418312253
+      tileset-cliff_14: -2084744031
+      tileset-cliff_15: -1279648087
+      tileset-cliff_16: -612953125
+      tileset-cliff_17: -222415631
+      tileset-cliff_18: 1744368950
+      tileset-cliff_19: -1943837293
       tileset-cliff_2: -3920641661462007186
+      tileset-cliff_20: 1058268386
+      tileset-cliff_21: 1217135701
+      tileset-cliff_22: 992392503
+      tileset-cliff_23: -1880787348
+      tileset-cliff_24: 1423887515
+      tileset-cliff_25: -381264254
+      tileset-cliff_26: -1888647321
+      tileset-cliff_27: 1763267535
+      tileset-cliff_28: 1352594554
+      tileset-cliff_29: -669163523
       tileset-cliff_3: -6998561061361352017
+      tileset-cliff_30: -671206695
+      tileset-cliff_31: 2098050642
+      tileset-cliff_32: -540022974
+      tileset-cliff_33: 1528255135
+      tileset-cliff_34: 1349327638
+      tileset-cliff_35: 1748281905
+      tileset-cliff_36: -1093832426
+      tileset-cliff_37: 791356576
+      tileset-cliff_38: -995555411
+      tileset-cliff_39: 1683786496
       tileset-cliff_4: -3572617440289907519
+      tileset-cliff_40: -278010096
+      tileset-cliff_41: 477160677
+      tileset-cliff_42: -2013404300
+      tileset-cliff_43: 116767431
+      tileset-cliff_44: -2111832612
+      tileset-cliff_45: -1907082613
+      tileset-cliff_46: 1352268192
+      tileset-cliff_47: -1646985521
+      tileset-cliff_48: 1740123669
+      tileset-cliff_49: 654299329
       tileset-cliff_5: 6899844924549765403
+      tileset-cliff_50: 1648037960
+      tileset-cliff_51: 1535475821
+      tileset-cliff_52: -1915714400
+      tileset-cliff_53: 726385216
+      tileset-cliff_54: 1060653480
+      tileset-cliff_55: -52151009
+      tileset-cliff_56: -941374804
+      tileset-cliff_57: 1620709118
+      tileset-cliff_58: -1723695216
+      tileset-cliff_59: 1102197059
       tileset-cliff_6: -3360660654834728640
+      tileset-cliff_60: 80657119
+      tileset-cliff_61: 468520890
+      tileset-cliff_62: -1794689540
+      tileset-cliff_63: -1679598312
+      tileset-cliff_64: 729183239
+      tileset-cliff_65: -1334041546
+      tileset-cliff_66: -1843321878
+      tileset-cliff_67: 1206973547
+      tileset-cliff_68: 860238931
+      tileset-cliff_69: 2099377127
       tileset-cliff_7: -308500046178820576
+      tileset-cliff_70: 1902990534
+      tileset-cliff_71: 610954019
+      tileset-cliff_72: -2115146683
+      tileset-cliff_73: 1223581242
+      tileset-cliff_74: -704658199
+      tileset-cliff_75: -1273276954
+      tileset-cliff_76: -303705749
+      tileset-cliff_77: 345539859
+      tileset-cliff_78: 1287698553
+      tileset-cliff_79: 960143078
       tileset-cliff_8: 1121932223692393870
+      tileset-cliff_80: 637959632
+      tileset-cliff_81: -937329594
+      tileset-cliff_82: 853535367
+      tileset-cliff_83: -266092490
+      tileset-cliff_84: 963746102
+      tileset-cliff_85: 1023160947
+      tileset-cliff_86: -1423442984
+      tileset-cliff_87: -1521323697
+      tileset-cliff_88: 716575640
+      tileset-cliff_89: 1112278155
       tileset-cliff_9: -33728226216663289
+      tileset-cliff_90: 1446072753
+      tileset-cliff_91: -1328172078
+      tileset-cliff_92: -840013719
+      tileset-cliff_93: 1165309382
+      tileset-cliff_94: -79688622
+      tileset-cliff_95: 1509745257
+      tileset-cliff_96: 1515769247
+      tileset-cliff_97: 868993790
+      tileset-cliff_98: -1337260201
+      tileset-cliff_99: -1120952370
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
