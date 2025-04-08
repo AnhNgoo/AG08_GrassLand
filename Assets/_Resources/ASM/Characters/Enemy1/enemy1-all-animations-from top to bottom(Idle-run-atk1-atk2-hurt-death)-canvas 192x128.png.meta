@@ -350,7 +350,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -364,7 +364,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -385,7 +385,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -456,10 +456,10 @@ TextureImporter:
         192x128_0
       rect:
         serializedVersion: 2
-        x: 66
-        y: 677
-        width: 26
-        height: 39
+        x: 0
+        y: 640
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -479,10 +479,10 @@ TextureImporter:
         192x128_1
       rect:
         serializedVersion: 2
-        x: 258
-        y: 677
-        width: 26
-        height: 38
+        x: 192
+        y: 640
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -502,10 +502,10 @@ TextureImporter:
         192x128_2
       rect:
         serializedVersion: 2
-        x: 451
-        y: 677
-        width: 25
-        height: 37
+        x: 384
+        y: 640
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -525,10 +525,10 @@ TextureImporter:
         192x128_3
       rect:
         serializedVersion: 2
-        x: 645
-        y: 677
-        width: 24
-        height: 35
+        x: 576
+        y: 640
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -548,10 +548,10 @@ TextureImporter:
         192x128_4
       rect:
         serializedVersion: 2
-        x: 837
-        y: 677
-        width: 24
-        height: 33
+        x: 768
+        y: 640
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -571,10 +571,10 @@ TextureImporter:
         192x128_5
       rect:
         serializedVersion: 2
-        x: 1029
-        y: 677
-        width: 24
-        height: 36
+        x: 960
+        y: 640
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -594,10 +594,10 @@ TextureImporter:
         192x128_6
       rect:
         serializedVersion: 2
-        x: 1220
-        y: 677
-        width: 25
-        height: 38
+        x: 1152
+        y: 640
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -617,10 +617,10 @@ TextureImporter:
         192x128_7
       rect:
         serializedVersion: 2
-        x: 1410
-        y: 677
-        width: 27
-        height: 38
+        x: 1344
+        y: 640
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -640,10 +640,10 @@ TextureImporter:
         192x128_8
       rect:
         serializedVersion: 2
-        x: 70
-        y: 551
-        width: 24
-        height: 38
+        x: 0
+        y: 512
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -663,10 +663,10 @@ TextureImporter:
         192x128_9
       rect:
         serializedVersion: 2
-        x: 261
-        y: 554
-        width: 24
-        height: 35
+        x: 192
+        y: 512
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -686,10 +686,10 @@ TextureImporter:
         192x128_10
       rect:
         serializedVersion: 2
-        x: 452
-        y: 549
-        width: 25
-        height: 42
+        x: 384
+        y: 512
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -709,10 +709,10 @@ TextureImporter:
         192x128_11
       rect:
         serializedVersion: 2
-        x: 648
-        y: 549
-        width: 21
-        height: 35
+        x: 576
+        y: 512
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -732,10 +732,10 @@ TextureImporter:
         192x128_12
       rect:
         serializedVersion: 2
-        x: 837
-        y: 550
-        width: 23
-        height: 37
+        x: 768
+        y: 512
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -755,10 +755,10 @@ TextureImporter:
         192x128_13
       rect:
         serializedVersion: 2
-        x: 1027
-        y: 552
-        width: 25
-        height: 38
+        x: 960
+        y: 512
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -778,10 +778,10 @@ TextureImporter:
         192x128_14
       rect:
         serializedVersion: 2
-        x: 1219
-        y: 549
-        width: 25
-        height: 41
+        x: 1152
+        y: 512
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -801,10 +801,10 @@ TextureImporter:
         192x128_15
       rect:
         serializedVersion: 2
-        x: 1417
-        y: 549
-        width: 19
-        height: 35
+        x: 1344
+        y: 512
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -824,10 +824,10 @@ TextureImporter:
         192x128_16
       rect:
         serializedVersion: 2
-        x: 2044
-        y: 468
-        width: 9
-        height: 13
+        x: 0
+        y: 384
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -847,10 +847,10 @@ TextureImporter:
         192x128_17
       rect:
         serializedVersion: 2
-        x: 2064
-        y: 464
-        width: 12
-        height: 16
+        x: 192
+        y: 384
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -870,10 +870,10 @@ TextureImporter:
         192x128_18
       rect:
         serializedVersion: 2
-        x: 2235
-        y: 476
-        width: 6
-        height: 8
+        x: 384
+        y: 384
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -893,10 +893,10 @@ TextureImporter:
         192x128_19
       rect:
         serializedVersion: 2
-        x: 2263
-        y: 474
-        width: 6
-        height: 7
+        x: 576
+        y: 384
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -916,10 +916,10 @@ TextureImporter:
         192x128_20
       rect:
         serializedVersion: 2
-        x: 2390
-        y: 406
-        width: 83
-        height: 79
+        x: 768
+        y: 384
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -939,10 +939,10 @@ TextureImporter:
         192x128_21
       rect:
         serializedVersion: 2
-        x: 1622
-        y: 421
-        width: 47
-        height: 41
+        x: 960
+        y: 384
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -962,10 +962,10 @@ TextureImporter:
         192x128_22
       rect:
         serializedVersion: 2
-        x: 1814
-        y: 415
-        width: 74
-        height: 60
+        x: 1152
+        y: 384
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -985,10 +985,10 @@ TextureImporter:
         192x128_23
       rect:
         serializedVersion: 2
-        x: 2033
-        y: 456
-        width: 10
-        height: 10
+        x: 1344
+        y: 384
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1008,10 +1008,10 @@ TextureImporter:
         192x128_24
       rect:
         serializedVersion: 2
-        x: 2198
-        y: 409
-        width: 82
-        height: 52
+        x: 1536
+        y: 384
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1031,10 +1031,10 @@ TextureImporter:
         192x128_25
       rect:
         serializedVersion: 2
-        x: 2224
-        y: 461
-        width: 7
-        height: 6
+        x: 1728
+        y: 384
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1054,10 +1054,10 @@ TextureImporter:
         192x128_26
       rect:
         serializedVersion: 2
-        x: 67
-        y: 421
-        width: 25
-        height: 36
+        x: 1920
+        y: 384
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1077,10 +1077,10 @@ TextureImporter:
         192x128_27
       rect:
         serializedVersion: 2
-        x: 256
-        y: 421
-        width: 28
-        height: 36
+        x: 2112
+        y: 384
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1100,10 +1100,10 @@ TextureImporter:
         192x128_28
       rect:
         serializedVersion: 2
-        x: 448
-        y: 421
-        width: 28
-        height: 35
+        x: 2304
+        y: 384
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1123,10 +1123,10 @@ TextureImporter:
         192x128_29
       rect:
         serializedVersion: 2
-        x: 639
-        y: 421
-        width: 29
-        height: 35
+        x: 2496
+        y: 384
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1146,10 +1146,10 @@ TextureImporter:
         192x128_30
       rect:
         serializedVersion: 2
-        x: 830
-        y: 421
-        width: 30
-        height: 35
+        x: 2688
+        y: 384
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1169,10 +1169,10 @@ TextureImporter:
         192x128_31
       rect:
         serializedVersion: 2
-        x: 1022
-        y: 421
-        width: 30
-        height: 35
+        x: 2880
+        y: 384
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1192,10 +1192,10 @@ TextureImporter:
         192x128_32
       rect:
         serializedVersion: 2
-        x: 1213
-        y: 421
-        width: 31
-        height: 35
+        x: 3072
+        y: 384
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1215,10 +1215,10 @@ TextureImporter:
         192x128_33
       rect:
         serializedVersion: 2
-        x: 1414
-        y: 421
-        width: 28
-        height: 37
+        x: 0
+        y: 256
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1238,10 +1238,10 @@ TextureImporter:
         192x128_34
       rect:
         serializedVersion: 2
-        x: 2006
-        y: 421
-        width: 47
-        height: 35
+        x: 192
+        y: 256
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1261,10 +1261,10 @@ TextureImporter:
         192x128_35
       rect:
         serializedVersion: 2
-        x: 2053
-        y: 448
-        width: 10
-        height: 12
+        x: 384
+        y: 256
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1284,10 +1284,10 @@ TextureImporter:
         192x128_36
       rect:
         serializedVersion: 2
-        x: 2071
-        y: 437
-        width: 10
-        height: 11
+        x: 576
+        y: 256
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1307,10 +1307,10 @@ TextureImporter:
         192x128_37
       rect:
         serializedVersion: 2
-        x: 2578
-        y: 421
-        width: 21
-        height: 37
+        x: 768
+        y: 256
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1330,10 +1330,10 @@ TextureImporter:
         192x128_38
       rect:
         serializedVersion: 2
-        x: 2758
-        y: 421
-        width: 25
-        height: 37
+        x: 960
+        y: 256
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1353,10 +1353,10 @@ TextureImporter:
         192x128_39
       rect:
         serializedVersion: 2
-        x: 2947
-        y: 421
-        width: 26
-        height: 39
+        x: 1152
+        y: 256
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1376,10 +1376,10 @@ TextureImporter:
         192x128_40
       rect:
         serializedVersion: 2
-        x: 3138
-        y: 421
-        width: 26
-        height: 36
+        x: 1344
+        y: 256
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1399,10 +1399,10 @@ TextureImporter:
         192x128_41
       rect:
         serializedVersion: 2
-        x: 2055
-        y: 429
-        width: 7
-        height: 7
+        x: 1536
+        y: 256
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1422,10 +1422,10 @@ TextureImporter:
         192x128_42
       rect:
         serializedVersion: 2
-        x: 2074
-        y: 422
-        width: 14
-        height: 8
+        x: 1728
+        y: 256
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1445,10 +1445,10 @@ TextureImporter:
         192x128_43
       rect:
         serializedVersion: 2
-        x: 2049
-        y: 410
-        width: 11
-        height: 9
+        x: 1920
+        y: 256
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1468,10 +1468,10 @@ TextureImporter:
         192x128_44
       rect:
         serializedVersion: 2
-        x: 67
-        y: 293
-        width: 25
-        height: 36
+        x: 2112
+        y: 256
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1491,10 +1491,10 @@ TextureImporter:
         192x128_45
       rect:
         serializedVersion: 2
-        x: 256
-        y: 293
-        width: 28
-        height: 35
+        x: 2304
+        y: 256
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1514,10 +1514,10 @@ TextureImporter:
         192x128_46
       rect:
         serializedVersion: 2
-        x: 446
-        y: 293
-        width: 30
-        height: 35
+        x: 2496
+        y: 256
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1537,10 +1537,10 @@ TextureImporter:
         192x128_47
       rect:
         serializedVersion: 2
-        x: 638
-        y: 293
-        width: 30
-        height: 35
+        x: 0
+        y: 128
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1560,10 +1560,10 @@ TextureImporter:
         192x128_48
       rect:
         serializedVersion: 2
-        x: 831
-        y: 293
-        width: 33
-        height: 36
+        x: 192
+        y: 128
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1583,10 +1583,10 @@ TextureImporter:
         192x128_49
       rect:
         serializedVersion: 2
-        x: 1028
-        y: 293
-        width: 43
-        height: 41
+        x: 384
+        y: 128
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1606,10 +1606,10 @@ TextureImporter:
         192x128_50
       rect:
         serializedVersion: 2
-        x: 1220
-        y: 293
-        width: 47
-        height: 35
+        x: 576
+        y: 128
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1629,10 +1629,10 @@ TextureImporter:
         192x128_51
       rect:
         serializedVersion: 2
-        x: 1412
-        y: 293
-        width: 48
-        height: 35
+        x: 768
+        y: 128
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1652,10 +1652,10 @@ TextureImporter:
         192x128_52
       rect:
         serializedVersion: 2
-        x: 1606
-        y: 293
-        width: 22
-        height: 36
+        x: 960
+        y: 128
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1675,10 +1675,10 @@ TextureImporter:
         192x128_53
       rect:
         serializedVersion: 2
-        x: 1794
-        y: 293
-        width: 26
-        height: 35
+        x: 1152
+        y: 128
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1698,10 +1698,10 @@ TextureImporter:
         192x128_54
       rect:
         serializedVersion: 2
-        x: 1986
-        y: 293
-        width: 26
-        height: 39
+        x: 1344
+        y: 128
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1721,10 +1721,10 @@ TextureImporter:
         192x128_55
       rect:
         serializedVersion: 2
-        x: 2180
-        y: 293
-        width: 24
-        height: 36
+        x: 0
+        y: 0
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1744,10 +1744,10 @@ TextureImporter:
         192x128_56
       rect:
         serializedVersion: 2
-        x: 2371
-        y: 293
-        width: 25
-        height: 36
+        x: 192
+        y: 0
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1767,10 +1767,10 @@ TextureImporter:
         192x128_57
       rect:
         serializedVersion: 2
-        x: 2563
-        y: 293
-        width: 25
-        height: 36
+        x: 384
+        y: 0
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1790,10 +1790,10 @@ TextureImporter:
         192x128_58
       rect:
         serializedVersion: 2
-        x: 65
-        y: 165
-        width: 33
-        height: 43
+        x: 576
+        y: 0
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1813,10 +1813,10 @@ TextureImporter:
         192x128_59
       rect:
         serializedVersion: 2
-        x: 258
-        y: 165
-        width: 32
-        height: 42
+        x: 768
+        y: 0
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1836,10 +1836,10 @@ TextureImporter:
         192x128_60
       rect:
         serializedVersion: 2
-        x: 450
-        y: 165
-        width: 32
-        height: 40
+        x: 960
+        y: 0
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1859,10 +1859,10 @@ TextureImporter:
         192x128_61
       rect:
         serializedVersion: 2
-        x: 641
-        y: 165
-        width: 31
-        height: 39
+        x: 1152
+        y: 0
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1882,10 +1882,10 @@ TextureImporter:
         192x128_62
       rect:
         serializedVersion: 2
-        x: 835
-        y: 165
-        width: 27
-        height: 35
+        x: 1344
+        y: 0
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1905,10 +1905,10 @@ TextureImporter:
         192x128_63
       rect:
         serializedVersion: 2
-        x: 1027
-        y: 165
-        width: 25
-        height: 38
+        x: 1536
+        y: 0
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1928,10 +1928,10 @@ TextureImporter:
         192x128_64
       rect:
         serializedVersion: 2
-        x: 1219
-        y: 165
-        width: 25
-        height: 37
+        x: 1728
+        y: 0
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1951,10 +1951,10 @@ TextureImporter:
         192x128_65
       rect:
         serializedVersion: 2
-        x: 1411
-        y: 165
-        width: 25
-        height: 36
+        x: 1920
+        y: 0
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1974,10 +1974,10 @@ TextureImporter:
         192x128_66
       rect:
         serializedVersion: 2
-        x: 64
-        y: 37
-        width: 34
-        height: 43
+        x: 2112
+        y: 0
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1997,10 +1997,10 @@ TextureImporter:
         192x128_67
       rect:
         serializedVersion: 2
-        x: 253
-        y: 37
-        width: 36
-        height: 42
+        x: 2304
+        y: 0
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2011,259 +2011,6 @@ TextureImporter:
       bones: []
       spriteID: 1e4658fdb02237890800000000000000
       internalID: -7461582723232733983
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemy1-all-animations-from top to bottom(Idle-run-atk1-atk2-hurt-death)-canvas
-        192x128_68
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 37
-        width: 33
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5102f11dabf39d110800000000000000
-      internalID: 1286129240195932181
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemy1-all-animations-from top to bottom(Idle-run-atk1-atk2-hurt-death)-canvas
-        192x128_69
-      rect:
-        serializedVersion: 2
-        x: 642
-        y: 37
-        width: 29
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e8e7ef0e994eb1800800000000000000
-      internalID: 584311926230515342
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemy1-all-animations-from top to bottom(Idle-run-atk1-atk2-hurt-death)-canvas
-        192x128_70
-      rect:
-        serializedVersion: 2
-        x: 836
-        y: 37
-        width: 26
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 241ea7b19b555a190800000000000000
-      internalID: -7951855313534394046
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemy1-all-animations-from top to bottom(Idle-run-atk1-atk2-hurt-death)-canvas
-        192x128_71
-      rect:
-        serializedVersion: 2
-        x: 1028
-        y: 37
-        width: 25
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 87c7be4ca2a26f950800000000000000
-      internalID: 6482415076827167864
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemy1-all-animations-from top to bottom(Idle-run-atk1-atk2-hurt-death)-canvas
-        192x128_72
-      rect:
-        serializedVersion: 2
-        x: 1220
-        y: 37
-        width: 25
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4d94c0fa20467e400800000000000000
-      internalID: 353361058461403604
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemy1-all-animations-from top to bottom(Idle-run-atk1-atk2-hurt-death)-canvas
-        192x128_73
-      rect:
-        serializedVersion: 2
-        x: 1409
-        y: 37
-        width: 30
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 94bc165668769cd40800000000000000
-      internalID: 5605125038163479369
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemy1-all-animations-from top to bottom(Idle-run-atk1-atk2-hurt-death)-canvas
-        192x128_74
-      rect:
-        serializedVersion: 2
-        x: 1600
-        y: 20
-        width: 27
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6dcc6b3187457c220800000000000000
-      internalID: 2506064592358526166
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemy1-all-animations-from top to bottom(Idle-run-atk1-atk2-hurt-death)-canvas
-        192x128_75
-      rect:
-        serializedVersion: 2
-        x: 1792
-        y: 18
-        width: 28
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f05c1375a38617ae0800000000000000
-      internalID: -1553345796685839089
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemy1-all-animations-from top to bottom(Idle-run-atk1-atk2-hurt-death)-canvas
-        192x128_76
-      rect:
-        serializedVersion: 2
-        x: 1984
-        y: 18
-        width: 28
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 16228cf51e5a19b60800000000000000
-      internalID: 7751158821074510433
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemy1-all-animations-from top to bottom(Idle-run-atk1-atk2-hurt-death)-canvas
-        192x128_77
-      rect:
-        serializedVersion: 2
-        x: 2176
-        y: 18
-        width: 28
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 76e26f306bf21ec40800000000000000
-      internalID: 5539761475439439463
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemy1-all-animations-from top to bottom(Idle-run-atk1-atk2-hurt-death)-canvas
-        192x128_78
-      rect:
-        serializedVersion: 2
-        x: 2368
-        y: 18
-        width: 28
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 07785039d89765c40800000000000000
-      internalID: 5500717643843602288
       vertices: []
       indices: 
       edges: []
@@ -2347,18 +2094,7 @@ TextureImporter:
       enemy1-all-animations-from top to bottom(Idle-run-atk1-atk2-hurt-death)-canvas 192x128_65: 1012288514308842295
       enemy1-all-animations-from top to bottom(Idle-run-atk1-atk2-hurt-death)-canvas 192x128_66: -1209359467437183401
       enemy1-all-animations-from top to bottom(Idle-run-atk1-atk2-hurt-death)-canvas 192x128_67: -7461582723232733983
-      enemy1-all-animations-from top to bottom(Idle-run-atk1-atk2-hurt-death)-canvas 192x128_68: 1286129240195932181
-      enemy1-all-animations-from top to bottom(Idle-run-atk1-atk2-hurt-death)-canvas 192x128_69: 584311926230515342
       enemy1-all-animations-from top to bottom(Idle-run-atk1-atk2-hurt-death)-canvas 192x128_7: 7102462478819348519
-      enemy1-all-animations-from top to bottom(Idle-run-atk1-atk2-hurt-death)-canvas 192x128_70: -7951855313534394046
-      enemy1-all-animations-from top to bottom(Idle-run-atk1-atk2-hurt-death)-canvas 192x128_71: 6482415076827167864
-      enemy1-all-animations-from top to bottom(Idle-run-atk1-atk2-hurt-death)-canvas 192x128_72: 353361058461403604
-      enemy1-all-animations-from top to bottom(Idle-run-atk1-atk2-hurt-death)-canvas 192x128_73: 5605125038163479369
-      enemy1-all-animations-from top to bottom(Idle-run-atk1-atk2-hurt-death)-canvas 192x128_74: 2506064592358526166
-      enemy1-all-animations-from top to bottom(Idle-run-atk1-atk2-hurt-death)-canvas 192x128_75: -1553345796685839089
-      enemy1-all-animations-from top to bottom(Idle-run-atk1-atk2-hurt-death)-canvas 192x128_76: 7751158821074510433
-      enemy1-all-animations-from top to bottom(Idle-run-atk1-atk2-hurt-death)-canvas 192x128_77: 5539761475439439463
-      enemy1-all-animations-from top to bottom(Idle-run-atk1-atk2-hurt-death)-canvas 192x128_78: 5500717643843602288
       enemy1-all-animations-from top to bottom(Idle-run-atk1-atk2-hurt-death)-canvas 192x128_8: 5224010424874145345
       enemy1-all-animations-from top to bottom(Idle-run-atk1-atk2-hurt-death)-canvas 192x128_9: 9202791479872274646
   mipmapLimitGroupName: 

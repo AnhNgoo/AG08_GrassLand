@@ -91,7 +91,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -105,7 +105,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -126,7 +126,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -196,12 +196,12 @@ TextureImporter:
       name: warrior-death_0
       rect:
         serializedVersion: 2
-        x: 38
-        y: 21
-        width: 53
-        height: 70
+        x: 0
+        y: 0
+        width: 144
+        height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -218,12 +218,12 @@ TextureImporter:
       name: warrior-death_1
       rect:
         serializedVersion: 2
-        x: 185
-        y: 21
-        width: 69
-        height: 75
+        x: 144
+        y: 0
+        width: 144
+        height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -240,12 +240,12 @@ TextureImporter:
       name: warrior-death_2
       rect:
         serializedVersion: 2
-        x: 332
-        y: 21
-        width: 78
-        height: 74
+        x: 288
+        y: 0
+        width: 144
+        height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -262,12 +262,12 @@ TextureImporter:
       name: warrior-death_3
       rect:
         serializedVersion: 2
-        x: 484
-        y: 21
-        width: 45
-        height: 57
+        x: 432
+        y: 0
+        width: 144
+        height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -284,12 +284,12 @@ TextureImporter:
       name: warrior-death_4
       rect:
         serializedVersion: 2
-        x: 627
-        y: 19
-        width: 45
-        height: 46
+        x: 576
+        y: 0
+        width: 144
+        height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -306,12 +306,12 @@ TextureImporter:
       name: warrior-death_5
       rect:
         serializedVersion: 2
-        x: 771
-        y: 19
-        width: 45
-        height: 48
+        x: 720
+        y: 0
+        width: 144
+        height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -328,12 +328,12 @@ TextureImporter:
       name: warrior-death_6
       rect:
         serializedVersion: 2
-        x: 915
-        y: 19
-        width: 45
-        height: 46
+        x: 864
+        y: 0
+        width: 144
+        height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -350,12 +350,12 @@ TextureImporter:
       name: warrior-death_7
       rect:
         serializedVersion: 2
-        x: 1059
-        y: 19
-        width: 45
-        height: 46
+        x: 1008
+        y: 0
+        width: 144
+        height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -372,12 +372,12 @@ TextureImporter:
       name: warrior-death_8
       rect:
         serializedVersion: 2
-        x: 1203
-        y: 19
-        width: 45
-        height: 47
+        x: 1152
+        y: 0
+        width: 144
+        height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -394,12 +394,12 @@ TextureImporter:
       name: warrior-death_9
       rect:
         serializedVersion: 2
-        x: 1347
-        y: 19
-        width: 45
-        height: 45
+        x: 1296
+        y: 0
+        width: 144
+        height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -416,12 +416,12 @@ TextureImporter:
       name: warrior-death_10
       rect:
         serializedVersion: 2
-        x: 1491
-        y: 19
-        width: 45
-        height: 44
+        x: 1440
+        y: 0
+        width: 144
+        height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -438,12 +438,12 @@ TextureImporter:
       name: warrior-death_11
       rect:
         serializedVersion: 2
-        x: 1635
-        y: 19
-        width: 45
-        height: 43
+        x: 1584
+        y: 0
+        width: 144
+        height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -460,12 +460,12 @@ TextureImporter:
       name: warrior-death_12
       rect:
         serializedVersion: 2
-        x: 1779
-        y: 19
-        width: 45
-        height: 43
+        x: 1728
+        y: 0
+        width: 144
+        height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -482,12 +482,12 @@ TextureImporter:
       name: warrior-death_13
       rect:
         serializedVersion: 2
-        x: 1923
-        y: 19
-        width: 45
-        height: 43
+        x: 1872
+        y: 0
+        width: 144
+        height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -504,12 +504,12 @@ TextureImporter:
       name: warrior-death_14
       rect:
         serializedVersion: 2
-        x: 2067
-        y: 19
-        width: 45
-        height: 43
+        x: 2016
+        y: 0
+        width: 144
+        height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -526,12 +526,12 @@ TextureImporter:
       name: warrior-death_15
       rect:
         serializedVersion: 2
-        x: 2211
-        y: 19
-        width: 45
-        height: 43
+        x: 2160
+        y: 0
+        width: 144
+        height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -548,12 +548,12 @@ TextureImporter:
       name: warrior-death_16
       rect:
         serializedVersion: 2
-        x: 2355
-        y: 19
-        width: 45
-        height: 43
+        x: 2304
+        y: 0
+        width: 144
+        height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -570,12 +570,12 @@ TextureImporter:
       name: warrior-death_17
       rect:
         serializedVersion: 2
-        x: 2499
-        y: 19
-        width: 45
-        height: 43
+        x: 2448
+        y: 0
+        width: 144
+        height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -592,12 +592,12 @@ TextureImporter:
       name: warrior-death_18
       rect:
         serializedVersion: 2
-        x: 2643
-        y: 19
-        width: 45
-        height: 43
+        x: 2592
+        y: 0
+        width: 144
+        height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []

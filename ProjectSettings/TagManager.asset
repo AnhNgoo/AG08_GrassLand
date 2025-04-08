@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Floor
+  - Walls
+  - EnemyAttack
+  - Enemy
+  - PlayerAttack
   layers:
   - Default
   - TransparentFX
@@ -12,10 +17,10 @@ TagManager:
   - Water
   - UI
   - Ground
-  - 
-  - 
-  - 
-  - 
+  - Tree
+  - Enemy
+  - Obstacle
+  - EnemyAttack
   - 
   - 
   - 
