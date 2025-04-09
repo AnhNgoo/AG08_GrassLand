@@ -24,11 +24,17 @@ public class EnemyAI : MonoBehaviour
     public int attackDamage = 10;
     public float attackRange = 1f;
     public float attackCooldown = 1.5f;
-    public float knockbackForce = 5f;
     public GameObject deathEffect;
 
     [Header("Avoidance Settings")]
     public float maxAvoidanceTime = 5f;
+
+    // Knockback system
+    [Header("Knockback Settings")]
+    [SerializeField] private float KnockbackForce = 0f;
+    [SerializeField] private float durPushBack = 0.2f; // Thời gian đẩy lùi
+    private Vector2 pushBackVelocity; // Vận tốc đẩy lùi
+    private bool isPushBack = false; // Trạng thái đẩy lùi
 
     private Transform player;
     private Vector2 randomDirection;
@@ -68,6 +74,13 @@ public class EnemyAI : MonoBehaviour
     void Update()
     {
         if (isDead || player == null) return;
+
+        // Ưu tiên áp dụng knockback nếu đang trong trạng thái đẩy lùi
+        if (isPushBack)
+        {
+            rb.linearVelocity = pushBackVelocity;
+            return;
+        }
 
         animator?.SetBool(IsMoving, rb.linearVelocity.magnitude > 0.1f);
 
@@ -294,7 +307,8 @@ public class EnemyAI : MonoBehaviour
 
         StartCoroutine(FlashEffect());
 
-        rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
+        // Áp dụng knockback mới
+        _PushBack(knockbackDirection);
         CameraShake.ins.Shake(1, 20, 0.3f);
 
         if (currentHealth <= 0)
@@ -368,5 +382,20 @@ public class EnemyAI : MonoBehaviour
 
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(initialPosition, patrolRadius);
+    }
+
+    // Knockback system
+    private void _PushBack(Vector2 direction)
+    {
+        pushBackVelocity = direction.normalized * KnockbackForce; // Sử dụng giá trị 5f tương tự knockbackForce cũ
+        isPushBack = true;
+        StartCoroutine(PushBacking());
+    }
+
+    private IEnumerator PushBacking()
+    {
+        yield return new WaitForSeconds(durPushBack);
+        pushBackVelocity = Vector2.zero;
+        isPushBack = false;
     }
 }

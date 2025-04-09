@@ -29,9 +29,15 @@ public class PlayerController : MonoBehaviour
     private static readonly int DieTrigger = Animator.StringToHash("Die");
 
     private Color originalColor;
-    public float knockbackForce = 8f;
     public float invincibilityTime = 1f;
     private bool isInvincible = false;
+
+    // Knockback system
+    [Header("Knockback Settings")]
+    [SerializeField] private float KnockbackForce = 0f;
+    [SerializeField] private float durPushBack = 0.2f; // Thời gian đẩy lùi
+    private Vector2 pushBackVelocity; // Vận tốc đẩy lùi
+    private bool isPushBack = false; // Trạng thái đẩy lùi
 
     void Start()
     {
@@ -75,6 +81,13 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         if (isDead) return;
+
+        // Ưu tiên áp dụng knockback nếu đang trong trạng thái đẩy lùi
+        if (isPushBack)
+        {
+            rb.linearVelocity = pushBackVelocity;
+            return;
+        }
 
         if (isAttacking)
         {
@@ -127,10 +140,12 @@ public class PlayerController : MonoBehaviour
     {
         if (isDead) return;
 
-        // Áp dụng knockback ngay cả khi đang bất tử
-        //rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
+        // Chỉ áp dụng knockback nếu không đang tấn công
+        if (!isAttacking)
+        {
+            _PushBack(knockbackDirection);
+        }
 
-        // Chỉ nhận sát thương nếu không đang bất tử
         if (isInvincible) return;
 
         currentHealth -= damage;
@@ -149,6 +164,19 @@ public class PlayerController : MonoBehaviour
         }
 
         Invoke("ResetInvincibility", invincibilityTime);
+    }
+
+    public void AddHealth(int amount)
+    {
+        if (isDead) return;
+
+        currentHealth += amount;
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth; // Đảm bảo máu không vượt quá maxHealth
+        }
+
+        Debug.Log("Player health updated: " + currentHealth);
     }
 
     void ResetInvincibility()
@@ -191,5 +219,20 @@ public class PlayerController : MonoBehaviour
 
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(attackPosition, attackRange);
+    }
+
+    // Knockback system
+    private void _PushBack(Vector2 direction)
+    {
+        pushBackVelocity = direction.normalized * KnockbackForce;
+        isPushBack = true;
+        StartCoroutine(PushBacking());
+    }
+
+    private IEnumerator PushBacking()
+    {
+        yield return new WaitForSeconds(durPushBack);
+        pushBackVelocity = Vector2.zero;
+        isPushBack = false;
     }
 }
