@@ -1,156 +1,145 @@
 using UnityEngine;
-using UnityEngine.UI; // Thêm dòng này để sử dụng Slider và Image
-using TMPro;
 
-// Script này sẽ được gắn vào player hoặc enemy để quản lý thanh máu của họ
 public class HealthBarManager : MonoBehaviour
 {
     [Header("Health Bar Settings")]
-    public HealthBar healthBar;
-    public Transform worldSpaceCanvas; // Canvas cho thanh máu floating
+    public GameObject healthBarPrefab; // Prefab của HealthBar
+    public Transform worldSpaceCanvas; // Canvas chính (MainCanvas)
     public Vector3 offset = new Vector3(0, 1.2f, 0); // Vị trí offset so với character
-    
-    // Reference đến component quản lý máu (Player hoặc Enemy)
+    public float hideDelay = 3f; // Thời gian chờ trước khi ẩn thanh máu sau khi bị tổn thương
+
+    private HealthBar healthBar;
     private PlayerController playerController;
     private EnemyAI enemyAI;
-    
+    private int maxHealth;
+    private int lastHealth; // Lưu giá trị máu trước đó để kiểm tra tổn thương
+    private float hideTimer; // Đếm ngược để ẩn thanh máu
+    private bool isVisible = false; // Trạng thái hiển thị của thanh máu
+    private Camera mainCamera;
+
     private void Start()
     {
         playerController = GetComponent<PlayerController>();
         enemyAI = GetComponent<EnemyAI>();
-        
-        // Nếu là player
+        mainCamera = Camera.main;
+
+        // Tạo thanh máu
+        if (worldSpaceCanvas != null && healthBarPrefab != null)
+        {
+            CreateFloatingHealthBar();
+        }
+
+        // Khởi tạo giá trị máu
         if (playerController != null)
         {
-            // Nếu thanh máu không phải là floating, đã được set trong inspector
-            if (healthBar != null)
-            {
-                healthBar.SetMaxHealth(playerController.maxHealth);
-            }
+            maxHealth = playerController.maxHealth;
+            lastHealth = playerController.GetCurrentHealth();
+            healthBar.SetMaxHealth(maxHealth);
+            healthBar.SetHealth(lastHealth);
         }
-        // Nếu là enemy
         else if (enemyAI != null)
         {
-            // Tạo thanh máu floating nếu canvas đã được set
-            if (worldSpaceCanvas != null && healthBar == null)
-            {
-                CreateFloatingHealthBar();
-            }
-            
-            if (healthBar != null)
-            {
-                healthBar.SetMaxHealth(enemyAI.maxHealth);
-            }
+            maxHealth = enemyAI.maxHealth;
+            lastHealth = enemyAI.currentHealth;
+            healthBar.SetMaxHealth(maxHealth);
+            healthBar.SetHealth(lastHealth);
         }
+
+        // Ẩn thanh máu ban đầu
+        healthBar.Hide();
     }
-    
+
     private void Update()
     {
-        // Cập nhật giá trị máu hiện tại
-        if (healthBar != null)
+        if (healthBar == null) return;
+
+        // Cập nhật giá trị máu
+        int currentHealth = 0;
+        if (playerController != null)
         {
-            if (playerController != null)
+            currentHealth = playerController.GetCurrentHealth();
+        }
+        else if (enemyAI != null)
+        {
+            currentHealth = enemyAI.currentHealth;
+        }
+
+        // Kiểm tra nếu bị tổn thương
+        if (currentHealth < lastHealth)
+        {
+            healthBar.Show();
+            isVisible = true;
+            hideTimer = hideDelay; // Reset thời gian ẩn
+        }
+
+        // Cập nhật giá trị máu
+        healthBar.SetHealth(currentHealth);
+        lastHealth = currentHealth;
+
+        // Ẩn thanh máu nếu máu đầy hoặc hết thời gian chờ
+        if (currentHealth >= maxHealth || currentHealth <= 0)
+        {
+            healthBar.Hide();
+            isVisible = false;
+        }
+        else if (isVisible)
+        {
+            hideTimer -= Time.deltaTime;
+            if (hideTimer <= 0)
             {
-                healthBar.SetHealth(playerController.GetCurrentHealth());
-            }
-            else if (enemyAI != null)
-            {
-                healthBar.SetHealth(enemyAI.currentHealth);
-                
-                // Cập nhật vị trí của thanh máu floating nếu enemy
-                UpdateFloatingHealthBarPosition();
+                healthBar.Hide();
+                isVisible = false;
             }
         }
-    }
-    
-    private void CreateFloatingHealthBar()
-    {
-        // Tạo một game object mới cho thanh máu
-        GameObject healthBarObj = new GameObject("EnemyHealthBar");
-        healthBarObj.transform.SetParent(worldSpaceCanvas);
-        
-        // Thêm các component cần thiết
-        RectTransform rectTransform = healthBarObj.AddComponent<RectTransform>();
-        rectTransform.sizeDelta = new Vector2(80, 10); // Kích thước thanh máu
-        
-        // Thêm Slider component
-        Slider slider = healthBarObj.AddComponent<Slider>();
-        slider.minValue = 0;
-        slider.maxValue = enemyAI.maxHealth;
-        slider.value = enemyAI.currentHealth;
-        slider.interactable = false;
-        
-        // Tạo background
-        GameObject background = new GameObject("Background");
-        background.transform.SetParent(healthBarObj.transform);
-        Image bgImage = background.AddComponent<Image>();
-        bgImage.color = new Color(0.2f, 0.2f, 0.2f, 0.7f);
-        RectTransform bgRect = background.GetComponent<RectTransform>();
-        bgRect.anchorMin = new Vector2(0, 0);
-        bgRect.anchorMax = new Vector2(1, 1);
-        bgRect.sizeDelta = Vector2.zero;
-        
-        // Tạo fill area
-        GameObject fillArea = new GameObject("Fill Area");
-        fillArea.transform.SetParent(healthBarObj.transform);
-        RectTransform fillAreaRect = fillArea.AddComponent<RectTransform>();
-        fillAreaRect.anchorMin = new Vector2(0, 0);
-        fillAreaRect.anchorMax = new Vector2(1, 1);
-        fillAreaRect.offsetMin = new Vector2(2, 2);
-        fillAreaRect.offsetMax = new Vector2(-2, -2);
-        
-        // Tạo fill
-        GameObject fill = new GameObject("Fill");
-        fill.transform.SetParent(fillArea.transform);
-        Image fillImage = fill.AddComponent<Image>();
-        fillImage.color = Color.red;
-        RectTransform fillRect = fill.GetComponent<RectTransform>();
-        fillRect.anchorMin = new Vector2(0, 0);
-        fillRect.anchorMax = new Vector2(1, 1);
-        fillRect.sizeDelta = Vector2.zero;
-        
-        // Setup slider
-        slider.fillRect = fillRect;
-        slider.targetGraphic = fillImage;
-        slider.direction = Slider.Direction.LeftToRight;
-        
-        // Tạo HealthBar component và liên kết với slider
-        healthBar = healthBarObj.AddComponent<HealthBar>();
-        healthBar.slider = slider;
-        healthBar.fill = fillImage;
-        
-        // Thiết lập gradient màu
-        Gradient gradient = new Gradient();
-        gradient.SetKeys(
-            new GradientColorKey[] { 
-                new GradientColorKey(Color.red, 0.0f), 
-                new GradientColorKey(Color.yellow, 0.5f), 
-                new GradientColorKey(Color.green, 1.0f) 
-            },
-            new GradientAlphaKey[] { 
-                new GradientAlphaKey(1.0f, 0.0f), 
-                new GradientAlphaKey(1.0f, 1.0f) 
+
+        // Kiểm tra tầm nhìn camera (chỉ áp dụng cho enemy)
+        if (enemyAI != null)
+        {
+            bool isInCameraView = IsInCameraView();
+            if (!isInCameraView && isVisible)
+            {
+                healthBar.Hide();
+                isVisible = false;
             }
-        );
-        healthBar.gradient = gradient;
-        
-        // Cập nhật vị trí ban đầu
+            else if (isInCameraView && !isVisible && currentHealth < maxHealth && currentHealth > 0)
+            {
+                healthBar.Show();
+                isVisible = true;
+            }
+        }
+
+        // Cập nhật vị trí thanh máu
         UpdateFloatingHealthBarPosition();
     }
-    
+
+    private void CreateFloatingHealthBar()
+    {
+        GameObject healthBarObj = Instantiate(healthBarPrefab, worldSpaceCanvas);
+        healthBar = healthBarObj.GetComponent<HealthBar>();
+        //Debug.Log($"Created health bar for {gameObject.name}: {healthBar != null}");
+    }
+
     private void UpdateFloatingHealthBarPosition()
     {
         if (healthBar != null && healthBar.transform.parent == worldSpaceCanvas)
         {
-            // Chuyển đổi vị trí từ world space sang canvas space
-            Vector3 screenPos = Camera.main.WorldToScreenPoint(transform.position + offset);
+            Vector3 screenPos = mainCamera.WorldToScreenPoint(transform.position + offset);
             healthBar.transform.position = screenPos;
-            
-            // Ẩn thanh máu nếu enemy chết
-            if (enemyAI != null && enemyAI.currentHealth <= 0)
-            {
-                healthBar.gameObject.SetActive(false);
-            }
+            //Debug.Log($"Health bar position for {gameObject.name}: {screenPos}");
+        }
+    }
+
+    private bool IsInCameraView()
+    {
+        Vector3 viewportPoint = mainCamera.WorldToViewportPoint(transform.position);
+        return viewportPoint.x >= 0 && viewportPoint.x <= 1 && viewportPoint.y >= 0 && viewportPoint.y <= 1 && viewportPoint.z > 0;
+    }
+
+    private void OnDestroy()
+    {
+        if (healthBar != null)
+        {
+            Destroy(healthBar.gameObject);
         }
     }
 }

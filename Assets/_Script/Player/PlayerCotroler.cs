@@ -1,39 +1,33 @@
-using UnityEngine;
 using System.Collections;
+using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    // Components
     private Animator animator;
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
 
-    // Movement
     public float moveSpeed = 5f;
-    private Vector2 movement; // Handle movement in all 4 directions
+    private Vector2 movement;
 
-    // Health
     public int maxHealth = 100;
     private int currentHealth;
     private bool isDead = false;
 
-    // Attack
-    public int attackDamage = 25;  // Damage per hit
-    public float attackRange = 1.2f;  // Range of attack
-    private int attackIndex = 0; // To cycle through Attack 1, 2, 3
+    public int attackDamage = 25;
+    public float attackRange = 1.2f;
+    private int attackIndex = 0;
     private bool isAttacking = false;
-    private float attackCooldown = 0.5f; // Cooldown between attacks
+    private float attackCooldown = 0.5f;
     private float lastAttackTime;
-    public LayerMask enemyLayer; // Enemy layer to attack
+    public LayerMask enemyLayer;
 
-    // Animator Parameters
     private static readonly int IsMoving = Animator.StringToHash("IsMoving");
     private static readonly int AttackTrigger = Animator.StringToHash("Attack");
     private static readonly int AttackIndexParam = Animator.StringToHash("AttackIndex");
     private static readonly int HurtTrigger = Animator.StringToHash("Hurt");
     private static readonly int DieTrigger = Animator.StringToHash("Die");
 
-    // Feedback
     private Color originalColor;
     public float knockbackForce = 8f;
     public float invincibilityTime = 1f;
@@ -45,50 +39,43 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         currentHealth = maxHealth;
-        lastAttackTime = -attackCooldown; // Allow immediate attack at start
+        lastAttackTime = -attackCooldown;
         originalColor = spriteRenderer.color;
     }
 
     void Update()
     {
-        if (isDead) return; // Stop all actions if dead
+        if (isDead) return;
 
-        // Movement Input (4 directions)
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
-        // Update Animator for movement
-        // Only use horizontal movement (movement.x) to determine animation
         animator.SetBool(IsMoving, movement != Vector2.zero);
 
-        // Flip sprite based on horizontal direction (Left/Right)
         if (movement.x < 0)
         {
-            spriteRenderer.flipX = true; // Face left
+            spriteRenderer.flipX = true;
         }
         else if (movement.x > 0)
         {
-            spriteRenderer.flipX = false; // Face right
+            spriteRenderer.flipX = false;
         }
 
-        // Attack Input (J key or Left Mouse Button)
         if ((Input.GetKeyDown(KeyCode.J) || Input.GetMouseButtonDown(0)) && Time.time >= lastAttackTime + attackCooldown)
         {
             Attack();
         }
 
-        // For testing: Press H to simulate taking damage
         if (Input.GetKeyDown(KeyCode.H))
         {
-            TakeDamage(20); // Test taking 20 damage
+            TakeDamage(20, Random.insideUnitCircle.normalized);
         }
     }
 
     void FixedUpdate()
     {
-        if (isDead || isAttacking) return; // Don't move while attacking or dead
+        if (isDead || isAttacking) return;
 
-        // Move the player (4 directions)
         rb.MovePosition(rb.position + movement.normalized * moveSpeed * Time.fixedDeltaTime);
     }
 
@@ -99,77 +86,61 @@ public class PlayerController : MonoBehaviour
         isAttacking = true;
         lastAttackTime = Time.time;
 
-        // Cycle through Attack animations (1 → 2 → 3 → 1)
-        attackIndex = (attackIndex + 1) % 3; // 0, 1, 2, then loop back to 0
+        attackIndex = (attackIndex + 1) % 3;
         animator.SetInteger(AttackIndexParam, attackIndex);
         animator.SetTrigger(AttackTrigger);
 
-        // Will perform damage after a short delay to sync with animation
         Invoke("DealDamage", 0.2f);
     }
 
     void DealDamage()
     {
-        // Determine attack direction based on player facing
         Vector2 attackDirection = spriteRenderer.flipX ? Vector2.left : Vector2.right;
         Vector2 attackPosition = (Vector2)transform.position + attackDirection * 0.5f;
 
-        // Detect enemies in range
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPosition, attackRange, enemyLayer);
 
         foreach (Collider2D enemy in hitEnemies)
         {
-            // Get the enemy script and apply damage
             EnemyAI enemyAI = enemy.GetComponent<EnemyAI>();
             if (enemyAI != null)
             {
-                // Direction for knockback (from player to enemy)
                 Vector2 knockbackDir = (enemy.transform.position - transform.position).normalized;
                 enemyAI.TakeDamage(attackDamage, knockbackDir);
             }
         }
     }
 
-    // Called when attack animation ends (via Animation Event)
     public void OnAttackAnimationEnd()
     {
         isAttacking = false;
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage, Vector2 knockbackDirection)
     {
-        if (isDead || isInvincible) return;
+        if (isDead) return;
+
+        // Áp dụng knockback ngay cả khi đang bất tử
+        //rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
+
+        // Chỉ nhận sát thương nếu không đang bất tử
+        if (isInvincible) return;
 
         currentHealth -= damage;
         isInvincible = true;
 
-        // Visual feedback
         StartCoroutine(FlashEffect());
 
         if (currentHealth <= 0)
         {
-            currentHealth = 0; // Đảm bảo máu không âm cho health bar
+            currentHealth = 0;
             Die();
         }
         else
         {
             animator.SetTrigger(HurtTrigger);
-            // Knockback when hit
-            Vector2 knockbackDirection = rb.linearVelocity.normalized;
-            if (knockbackDirection == Vector2.zero)
-            {
-                // If player is standing still, knockback backwards
-                knockbackDirection = -movement.normalized;
-                if (knockbackDirection == Vector2.zero)
-                {
-                    // Random direction if no movement input
-                    knockbackDirection = Random.insideUnitCircle.normalized;
-                }
-            }
-            rb.AddForce(-knockbackDirection * knockbackForce, ForceMode2D.Impulse);
         }
 
-        // Reset invincibility after delay
         Invoke("ResetInvincibility", invincibilityTime);
     }
 
@@ -180,7 +151,6 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator FlashEffect()
     {
-        // Flash the sprite red and then back to normal
         spriteRenderer.color = Color.red;
         yield return new WaitForSeconds(0.1f);
         spriteRenderer.color = originalColor;
@@ -194,28 +164,24 @@ public class PlayerController : MonoBehaviour
     {
         isDead = true;
         animator.SetTrigger(DieTrigger);
-        rb.linearVelocity = Vector2.zero; // Stop movement
+        rb.linearVelocity = Vector2.zero;
     }
 
-    // Called when Die animation ends (via Animation Event)
     public void OnDieAnimationEnd()
     {
-        // Freeze the game (you can also show a Game Over screen here)
         Time.timeScale = 0f;
     }
 
-    // Method này được thêm để HealthBarManager có thể truy cập
     public int GetCurrentHealth()
     {
         return currentHealth;
     }
 
-    // Draw attack range in the editor (for debugging)
     void OnDrawGizmosSelected()
     {
-        Vector2 attackDirection = transform.localScale.x < 0 ? Vector2.left : Vector2.right;
+        Vector2 attackDirection = spriteRenderer != null && spriteRenderer.flipX ? Vector2.left : Vector2.right;
         Vector2 attackPosition = (Vector2)transform.position + attackDirection * 0.5f;
-        
+
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(attackPosition, attackRange);
     }
