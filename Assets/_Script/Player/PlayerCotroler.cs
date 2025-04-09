@@ -74,7 +74,13 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (isDead || isAttacking) return;
+        if (isDead) return;
+
+        if (isAttacking)
+        {
+            rb.linearVelocity = Vector2.zero; // Dừng hoàn toàn chuyển động khi đang tấn công
+            return;
+        }
 
         rb.MovePosition(rb.position + movement.normalized * moveSpeed * Time.fixedDeltaTime);
     }
@@ -85,6 +91,7 @@ public class PlayerController : MonoBehaviour
 
         isAttacking = true;
         lastAttackTime = Time.time;
+        rb.linearVelocity = Vector2.zero;
 
         attackIndex = (attackIndex + 1) % 3;
         animator.SetInteger(AttackIndexParam, attackIndex);

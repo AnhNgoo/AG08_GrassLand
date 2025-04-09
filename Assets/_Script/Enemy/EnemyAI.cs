@@ -295,6 +295,7 @@ public class EnemyAI : MonoBehaviour
         StartCoroutine(FlashEffect());
 
         rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
+        CameraShake.ins.Shake(1, 20, 0.3f);
 
         if (currentHealth <= 0)
         {
@@ -340,9 +341,9 @@ public class EnemyAI : MonoBehaviour
 
         if (deathEffect != null)
         {
-            Instantiate(deathEffect, transform.position, Quaternion.identity);
+            GameObject effect = Instantiate(deathEffect, transform.position, Quaternion.identity);
+            Destroy(effect, 0.4f);
         }
-
         StartCoroutine(DestroyAfterDelay(1.5f));
     }
 
