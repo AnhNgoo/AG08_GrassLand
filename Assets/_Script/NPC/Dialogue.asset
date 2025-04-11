@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1f4bfc7ca840a49bd7fa805288c7ab, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  sentences:
+  - "Quanh th\u1EBF gi\u1EDBi n\xE0y c\xF3 r\u1EA5t nhi\u1EC1u kho b\xE1u, ti\u1EBFc
+    l\xE0 ta \u0111\xE3 qu\xE1 gi\xE0 \u0111\u1EC3 c\xF3 th\u1EC3 b\u1EAFt \u0111\u1EA7u
+    \u0111i t\xECm ki\u1EBFm kho b\xE1u. Ch\xE0ng trai tr\u1EBB ng\u01B0\u01A1i s\u1EB5n
+    s\xE0ng \u0111i t\xECm kho b\xE1u cho ri\xEAng m\xECnh ch\u1EE9"
+  - "N\u1EBFu mu\u1ED1n h\xE3y \u0111i v\u1EC1 ph\xEDa tr\u01B0\u1EDBc \u0111i, r\u1ED3i
+    s\u1ED1 ph\u1EADn s\u1EBD cho c\u1EADu bi\u1EBFt kho b\xE1u c\u1EE7a c\u1EADu
+    \u0111ang n\u1EB1m \u1EDF \u0111\xE2u"
+  - "S\u1EBD c\xF3 nh\u1EEFng cu\u1ED9n gi\u1EA5y s\u1EBD g\u1EE3i \xFD cho c\u1EADu
+    nh\u1EEFng manh m\u1ED1i v\u1EC1 kho b\xE1u"
+  - "Nh\u01B0ng h\xE3y c\u1EA9n th\u1EADn v\u1EDBi nh\u1EEFng con qu\xE1i v\u1EADt,
+    ch\xFAng l\xE0 nh\u1EEFng k\u1EBB th\xE8m kh\xE1t kho b\xE1u \u0111\u1EBFn bi\u1EBFn
+    ch\u1EA5t"
+  - "Ch\xFAc c\u1EADu th\xE0nh c\xF4ng trong con \u0111\u01B0\u1EDDng t\xECm kho
+    b\xE1u c\u1EE7a ri\xEAng m\xECnh"

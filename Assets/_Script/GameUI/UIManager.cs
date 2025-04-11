@@ -18,9 +18,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Slider musicSlider;
     [SerializeField] private Slider sfxSlider;
 
-    [Header("Loading Screen")]
-    [SerializeField] private GameObject loadingPanel;
-    [SerializeField] private Slider loadingSlider;
+    [Header("Game Over Panel")]
+    [SerializeField] private GameObject gameOverPanel;
 
     private bool isPaused = false;
 
@@ -60,51 +59,11 @@ public class UIManager : MonoBehaviour
             //Debug.Log($"SFXSlider initialized to: {sfxVolume}");
         }
 
-        if (loadingPanel != null)
-        {
-            loadingPanel.SetActive(false);
-        }
     }
 
     public void PlayGame()
     {
         AudioManager.Instance.PlayButtonClickSound(); // Phát âm thanh nhấn nút
-        StartCoroutine(LoadSceneAsync(1));
-    }
-
-    private IEnumerator LoadSceneAsync(int sceneIndex)
-    {
-        // Hiển thị loading screen
-        if (loadingPanel != null)
-        {
-            loadingPanel.SetActive(true);
-        }
-        if (menuPanel != null)
-        {
-            menuPanel.SetActive(false);
-        }
-
-        // Load scene bất đồng bộ
-        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
-
-        // Đợi cho đến khi scene load xong
-        while (!operation.isDone)
-        {
-            // Cập nhật thanh tiến trình (nếu có)
-            if (loadingSlider != null)
-            {
-                float progress = Mathf.Clamp01(operation.progress / 0.9f); // operation.progress đi từ 0 đến 0.9
-                loadingSlider.value = progress;
-            }
-
-            yield return null;
-        }
-
-        // Ẩn loading screen sau khi load xong (thường không cần vì scene mới sẽ thay thế)
-        if (loadingPanel != null)
-        {
-            loadingPanel.SetActive(false);
-        }
     }
 
     public void OpenSettingPanel()
@@ -175,7 +134,7 @@ public class UIManager : MonoBehaviour
     {
         AudioManager.Instance.PlayButtonClickSound();
         Time.timeScale = 1f;
-        SceneManager.LoadScene("MainMenu");
+        // SceneManager.LoadScene("MainMenu");
     }
 
     private void SetMusicVolume(float volume)
@@ -186,5 +145,21 @@ public class UIManager : MonoBehaviour
     private void SetSFXVolume(float volume)
     {
         AudioManager.Instance.SetSFXVolume(volume);
+    }
+
+    public void ShowGameOver()
+    {
+        if (gameOverPanel != null)
+        {
+            gameOverPanel.SetActive(true);
+        }
+        Time.timeScale = 0f; // Dừng game
+    }
+
+    public void RestartGame()
+    {
+        AudioManager.Instance.PlayButtonClickSound();
+        Time.timeScale = 1f; // Khôi phục thời gian
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

@@ -9,6 +9,7 @@ TagManager:
   - EnemyAttack
   - Enemy
   - PlayerAttack
+  - Win
   layers:
   - Default
   - TransparentFX

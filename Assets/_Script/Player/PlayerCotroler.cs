@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class PlayerController : MonoBehaviour
     private float attackCooldown = 0.5f;
     private float lastAttackTime;
     public LayerMask enemyLayer;
+    public GameObject enemyList;
 
     private static readonly int IsMoving = Animator.StringToHash("IsMoving");
     private static readonly int AttackTrigger = Animator.StringToHash("Attack");
@@ -40,9 +42,16 @@ public class PlayerController : MonoBehaviour
     private bool isPushBack = false; // Trạng thái đẩy lùi
 
     [Header("Run SFX Settings")]
-    [SerializeField] private float runSoundInterval = 0.1f; // Khoảng thời gian giữa các lần phát RunSFX
+    [SerializeField] private float runSoundInterval = 0.2f; // Khoảng thời gian giữa các lần phát RunSFX
     private bool wasMovingLastFrame = false; // Trạng thái di chuyển ở frame trước
     private float lastRunSoundTime; // Thời gian lần cuối phát RunSFX
+    private bool canMove = true;
+
+    [Header("Scroll Collection")]
+    [SerializeField] private GameObject scrollList;
+
+    [Header("UI Manager")]
+    [SerializeField] private UIManager uiManager;
 
     void Start()
     {
@@ -56,7 +65,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (isDead) return;
+       if (isDead || !canMove) return;
 
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
@@ -103,7 +112,7 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (isDead) return;
+        if (isDead || !canMove) return;
 
         // Ưu tiên áp dụng knockback nếu đang trong trạng thái đẩy lùi
         if (isPushBack)
@@ -231,12 +240,41 @@ public class PlayerController : MonoBehaviour
 
     public void OnDieAnimationEnd()
     {
-        Time.timeScale = 0f;
+        uiManager.ShowGameOver();
+    }
+
+    public bool IsDie()
+    {
+        return isDead;
+    }
+
+    public void SetCanMove(bool canMove)
+    {
+        this.canMove = canMove;
+        if (!canMove)
+        {
+            rb.linearVelocity = Vector2.zero; // Dừng di chuyển ngay lập tức
+            movement = Vector2.zero; // Đặt movement về 0 để không di chuyển
+            animator.SetBool(IsMoving, false); // Dừng animation di chuyển
+        }
     }
 
     public int GetCurrentHealth()
     {
         return currentHealth;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Win"))
+        {
+            // Kiểm tra xem ScrollList còn object con nào không
+            if (scrollList != null && scrollList.transform.childCount == 0 && enemyList.transform.childCount == 0)
+            {
+                Debug.Log("You win! All scrolls collected!");
+                SceneManager.LoadScene("GrassLand_Map2");
+            }
+        }
     }
 
     void OnDrawGizmosSelected()

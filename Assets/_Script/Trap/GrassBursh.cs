@@ -23,14 +23,12 @@ public class GrassBursh : MonoBehaviour
                 {
                     // Cộng máu (cần thêm phương thức AddHealth vào PlayerController)
                     player.AddHealth(healthChange);
-                    Debug.Log("Player gained " + healthChange + " health from grass bush!");
                 }
                 else
                 {
                     // Trừ máu (sử dụng TakeDamage, nhưng không áp dụng knockback)
                     Vector2 noKnockbackDirection = Vector2.zero; // Không áp dụng knockback
                     player.TakeDamage(healthChangeAmount, noKnockbackDirection);
-                    Debug.Log("Player lost " + healthChangeAmount + " health from grass bush!");
                 }
 
                 // Đánh dấu bụi cỏ đã được sử dụng

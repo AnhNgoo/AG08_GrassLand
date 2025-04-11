@@ -207,7 +207,7 @@ MonoBehaviour:
   waitBetweenWanderTime: 1
   maxHealth: 100
   currentHealth: 0
-  attackDamage: 10
+  attackDamage: 15
   attackRange: 1
   attackCooldown: 1.5
   deathEffect: {fileID: 8646375460345246823, guid: b162b2cf22ac3294fb239a59bbc5b68f, type: 3}

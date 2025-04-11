@@ -65,7 +65,7 @@ public class HealthBarManager : MonoBehaviour
         }
 
         // Kiểm tra nếu bị tổn thương
-        if (currentHealth < lastHealth)
+        if (currentHealth < lastHealth || currentHealth > lastHealth)
         {
             healthBar.Show();
             isVisible = true;
