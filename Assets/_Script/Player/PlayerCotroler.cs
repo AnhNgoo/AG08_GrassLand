@@ -39,6 +39,11 @@ public class PlayerController : MonoBehaviour
     private Vector2 pushBackVelocity; // Vận tốc đẩy lùi
     private bool isPushBack = false; // Trạng thái đẩy lùi
 
+    [Header("Run SFX Settings")]
+    [SerializeField] private float runSoundInterval = 0.1f; // Khoảng thời gian giữa các lần phát RunSFX
+    private bool wasMovingLastFrame = false; // Trạng thái di chuyển ở frame trước
+    private float lastRunSoundTime; // Thời gian lần cuối phát RunSFX
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -56,7 +61,25 @@ public class PlayerController : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
-        animator.SetBool(IsMoving, movement != Vector2.zero);
+        bool isMoving = movement != Vector2.zero;
+        animator.SetBool(IsMoving, isMoving);
+
+        // Phát RunSFX khi bắt đầu di chuyển và đủ thời gian interval
+        if (isMoving && !wasMovingLastFrame && !isAttacking && !isPushBack)
+        {
+            if (Time.time >= lastRunSoundTime + runSoundInterval)
+            {
+                AudioManager.Instance.PlayRunSFX();
+                lastRunSoundTime = Time.time;
+            }
+        }
+        else if (isMoving && Time.time >= lastRunSoundTime + runSoundInterval && !isAttacking && !isPushBack)
+        {
+            AudioManager.Instance.PlayRunSFX();
+            lastRunSoundTime = Time.time;
+        }
+
+        wasMovingLastFrame = isMoving;
 
         if (movement.x < 0)
         {
@@ -105,6 +128,7 @@ public class PlayerController : MonoBehaviour
         isAttacking = true;
         lastAttackTime = Time.time;
         rb.linearVelocity = Vector2.zero;
+        AudioManager.Instance.PlayAttackSFX();
 
         attackIndex = (attackIndex + 1) % 3;
         animator.SetInteger(AttackIndexParam, attackIndex);
@@ -144,6 +168,7 @@ public class PlayerController : MonoBehaviour
         if (!isAttacking)
         {
             _PushBack(knockbackDirection);
+            CameraShake.ins.Shake(1, 20, 0.3f);
         }
 
         if (isInvincible) return;
@@ -161,6 +186,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             animator.SetTrigger(HurtTrigger);
+            AudioManager.Instance.PlayHitSFX();
         }
 
         Invoke("ResetInvincibility", invincibilityTime);
@@ -198,6 +224,7 @@ public class PlayerController : MonoBehaviour
     void Die()
     {
         isDead = true;
+        AudioManager.Instance.PlayDieSFX();
         animator.SetTrigger(DieTrigger);
         rb.linearVelocity = Vector2.zero;
     }

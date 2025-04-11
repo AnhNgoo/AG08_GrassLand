@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f13ff3acec8109c4d9c03dd36c92e5a9, type: 3}
+  m_Name: AudioClips
+  m_EditorClassIdentifier: 
+  mainMenuMusic: {fileID: 8300000, guid: dbc368e1b0be5664d8e6e0f9a79eca87, type: 3}
+  gameSceneMusic: {fileID: 8300000, guid: b02106ead2d682d4487ac61c238eaa56, type: 3}
+  buttonClickSound: {fileID: 8300000, guid: e4172d28be24c644ca788cf7242b58e6, type: 3}
+  hitSFX: {fileID: 8300000, guid: db517dd5d5a66094db900293d707409f, type: 3}
+  deathSFX: {fileID: 8300000, guid: dc15bbcb200035b4cab1cd2f0d2a2c7a, type: 3}
+  runSFX: {fileID: 8300000, guid: 857e13957d17a074781d84f20553eea0, type: 3}
+  attackSFX: {fileID: 8300000, guid: 4c39c675db5da4c4d9e3e3af42547139, type: 3}

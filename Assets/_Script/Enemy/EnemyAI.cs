@@ -319,6 +319,7 @@ public class EnemyAI : MonoBehaviour
         {
             animator.SetTrigger(HurtTrigger);
             StartCoroutine(PauseAfterHit());
+            AudioManager.Instance.PlayHitSFX();
         }
     }
 

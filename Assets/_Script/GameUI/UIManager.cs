@@ -1,23 +1,26 @@
 using UnityEngine;
+using System.Collections;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
     [Header("Main Menu Panels")]
-    [SerializeField] private GameObject menuPanel; // MenuPanel trong MainMenu
-    [SerializeField] private GameObject settingPanelMainMenu; // SettingPanel trong MainMenu
+    [SerializeField] private GameObject menuPanel;
+    [SerializeField] private GameObject settingPanelMainMenu;
 
     [Header("In-Game Panels")]
-    [SerializeField] private GameObject pausePanel; // PausePanel trong GameScene
-    [SerializeField] private GameObject settingPanelInGame; // SettingPanel trong GameScene
-    [SerializeField] private Button pauseButton; // Nút Pause trong GameScene
+    [SerializeField] private GameObject pausePanel;
+    [SerializeField] private GameObject settingPanelInGame;
+    [SerializeField] private Button pauseButton;
 
     [Header("Audio Settings")]
-    [SerializeField] private Slider musicSlider; // Slider điều chỉnh âm lượng Music
-    [SerializeField] private Slider sfxSlider; // Slider điều chỉnh âm lượng SFX
-    [SerializeField] private AudioSource musicSource; // AudioSource cho nhạc nền
-    [SerializeField] private AudioSource sfxSource; // AudioSource cho hiệu ứng âm thanh
+    [SerializeField] private Slider musicSlider;
+    [SerializeField] private Slider sfxSlider;
+
+    [Header("Loading Screen")]
+    [SerializeField] private GameObject loadingPanel;
+    [SerializeField] private Slider loadingSlider;
 
     private bool isPaused = false;
 
@@ -41,131 +44,147 @@ public class UIManager : MonoBehaviour
             settingPanelInGame.SetActive(false);
         }
 
-        // Khởi tạo giá trị slider từ PlayerPrefs (nếu có)
+        // Khởi tạo giá trị slider từ PlayerPrefs
         if (musicSlider != null)
         {
-            musicSlider.value = PlayerPrefs.GetFloat("MusicVolume", 1f);
-            if (musicSource != null)
-            {
-                musicSource.volume = musicSlider.value;
-            }
+            float musicVolume = PlayerPrefs.GetFloat("MusicVolume", 1f);
+            musicSlider.value = musicVolume;
+            musicSlider.onValueChanged.AddListener(SetMusicVolume);
+            //Debug.Log($"MusicSlider initialized to: {musicVolume}");
         }
         if (sfxSlider != null)
         {
-            sfxSlider.value = PlayerPrefs.GetFloat("SFXVolume", 1f);
-            if (sfxSource != null)
-            {
-                sfxSource.volume = sfxSlider.value;
-            }
+            float sfxVolume = PlayerPrefs.GetFloat("SFXVolume", 1f);
+            sfxSlider.value = sfxVolume;
+            sfxSlider.onValueChanged.AddListener(SetSFXVolume);
+            //Debug.Log($"SFXSlider initialized to: {sfxVolume}");
         }
 
-        // Gán sự kiện cho slider
-        if (musicSlider != null)
+        if (loadingPanel != null)
         {
-            musicSlider.onValueChanged.AddListener(SetMusicVolume);
-        }
-        if (sfxSlider != null)
-        {
-            sfxSlider.onValueChanged.AddListener(SetSFXVolume);
+            loadingPanel.SetActive(false);
         }
     }
 
-    // Chức năng nút Play (MainMenu)
     public void PlayGame()
     {
-        SceneManager.LoadScene("GrassLand_Map1"); // Thay "GameScene" bằng tên scene đầu tiên của bạn
+        AudioManager.Instance.PlayButtonClickSound(); // Phát âm thanh nhấn nút
+        StartCoroutine(LoadSceneAsync(1));
     }
 
-    // Chức năng nút Setting (MainMenu và In-Game)
-    public void OpenSettingPanel()
+    private IEnumerator LoadSceneAsync(int sceneIndex)
     {
+        // Hiển thị loading screen
+        if (loadingPanel != null)
+        {
+            loadingPanel.SetActive(true);
+        }
         if (menuPanel != null)
         {
-            menuPanel.SetActive(false); // Tắt MenuPanel trong MainMenu
-            settingPanelMainMenu.SetActive(true); // Mở SettingPanel trong MainMenu
+            menuPanel.SetActive(false);
+        }
+
+        // Load scene bất đồng bộ
+        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
+
+        // Đợi cho đến khi scene load xong
+        while (!operation.isDone)
+        {
+            // Cập nhật thanh tiến trình (nếu có)
+            if (loadingSlider != null)
+            {
+                float progress = Mathf.Clamp01(operation.progress / 0.9f); // operation.progress đi từ 0 đến 0.9
+                loadingSlider.value = progress;
+            }
+
+            yield return null;
+        }
+
+        // Ẩn loading screen sau khi load xong (thường không cần vì scene mới sẽ thay thế)
+        if (loadingPanel != null)
+        {
+            loadingPanel.SetActive(false);
+        }
+    }
+
+    public void OpenSettingPanel()
+    {
+        AudioManager.Instance.PlayButtonClickSound();
+        if (menuPanel != null)
+        {
+            menuPanel.SetActive(false);
+            settingPanelMainMenu.SetActive(true);
         }
         else if (pausePanel != null)
         {
-            pausePanel.SetActive(false); // Tắt PausePanel trong GameScene
-            settingPanelInGame.SetActive(true); // Mở SettingPanel trong GameScene
+            pausePanel.SetActive(false);
+            settingPanelInGame.SetActive(true);
         }
     }
 
-    // Chức năng nút Back trong SettingPanel
     public void BackFromSetting()
     {
+        AudioManager.Instance.PlayButtonClickSound();
         if (settingPanelMainMenu != null && settingPanelMainMenu.activeSelf)
         {
-            settingPanelMainMenu.SetActive(false); // Tắt SettingPanel trong MainMenu
-            menuPanel.SetActive(true); // Mở lại MenuPanel trong MainMenu
+            settingPanelMainMenu.SetActive(false);
+            menuPanel.SetActive(true);
         }
         else if (settingPanelInGame != null && settingPanelInGame.activeSelf)
         {
-            settingPanelInGame.SetActive(false); // Tắt SettingPanel trong GameScene
-            pausePanel.SetActive(true); // Mở lại PausePanel trong GameScene
+            settingPanelInGame.SetActive(false);
+            pausePanel.SetActive(true);
         }
     }
 
-    // Chức năng nút Exit (MainMenu)
     public void ExitGame()
     {
+        AudioManager.Instance.PlayButtonClickSound();
         Application.Quit();
         Debug.Log("Game exited.");
     }
 
-    // Chức năng nút Pause (In-Game)
     public void TogglePause()
     {
+        AudioManager.Instance.PlayButtonClickSound();
         isPaused = !isPaused;
         if (isPaused)
         {
-            Time.timeScale = 0f; // Dừng game
-            pausePanel.SetActive(true); // Mở PausePanel
-            pauseButton.gameObject.SetActive(false); // Ẩn nút Pause
+            Time.timeScale = 0f;
+            pausePanel.SetActive(true);
+            pauseButton.gameObject.SetActive(false);
         }
         else
         {
-            Time.timeScale = 1f; // Tiếp tục game
-            pausePanel.SetActive(false); // Tắt PausePanel
-            pauseButton.gameObject.SetActive(true); // Hiện lại nút Pause
+            Time.timeScale = 1f;
+            pausePanel.SetActive(false);
+            pauseButton.gameObject.SetActive(true);
         }
     }
 
-    // Chức năng nút Continue (PausePanel)
     public void ContinueGame()
     {
+        AudioManager.Instance.PlayButtonClickSound();
         isPaused = false;
-        Time.timeScale = 1f; // Tiếp tục game
-        pausePanel.SetActive(false); // Tắt PausePanel
-        pauseButton.gameObject.SetActive(true); // Hiện lại nút Pause
+        Time.timeScale = 1f;
+        pausePanel.SetActive(false);
+        pauseButton.gameObject.SetActive(true);
     }
 
-    // Chức năng nút Menu (PausePanel)
     public void ReturnToMainMenu()
     {
-        Time.timeScale = 1f; // Đặt lại Time.timeScale trước khi chuyển scene
-        SceneManager.LoadScene("MainMenu"); // Thay "MainMenu" bằng tên scene MainMenu của bạn
+        AudioManager.Instance.PlayButtonClickSound();
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("MainMenu");
     }
 
-    // Điều chỉnh âm lượng Music
     private void SetMusicVolume(float volume)
     {
-        if (musicSource != null)
-        {
-            musicSource.volume = volume;
-        }
-        PlayerPrefs.SetFloat("MusicVolume", volume);
-        PlayerPrefs.Save();
+        AudioManager.Instance.SetMusicVolume(volume);
     }
 
-    // Điều chỉnh âm lượng SFX
     private void SetSFXVolume(float volume)
     {
-        if (sfxSource != null)
-        {
-            sfxSource.volume = volume;
-        }
-        PlayerPrefs.SetFloat("SFXVolume", volume);
-        PlayerPrefs.Save();
+        AudioManager.Instance.SetSFXVolume(volume);
     }
 }
