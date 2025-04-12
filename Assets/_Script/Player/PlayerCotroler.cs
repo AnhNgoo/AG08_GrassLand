@@ -34,17 +34,16 @@ public class PlayerController : MonoBehaviour
     public float invincibilityTime = 1f;
     private bool isInvincible = false;
 
-    // Knockback system
     [Header("Knockback Settings")]
     [SerializeField] private float KnockbackForce = 0f;
-    [SerializeField] private float durPushBack = 0.2f; // Thời gian đẩy lùi
-    private Vector2 pushBackVelocity; // Vận tốc đẩy lùi
-    private bool isPushBack = false; // Trạng thái đẩy lùi
+    [SerializeField] private float durPushBack = 0.2f;
+    private Vector2 pushBackVelocity;
+    private bool isPushBack = false;
 
     [Header("Run SFX Settings")]
-    [SerializeField] private float runSoundInterval = 0.2f; // Khoảng thời gian giữa các lần phát RunSFX
-    private bool wasMovingLastFrame = false; // Trạng thái di chuyển ở frame trước
-    private float lastRunSoundTime; // Thời gian lần cuối phát RunSFX
+    [SerializeField] private float runSoundInterval = 0.2f;
+    private bool wasMovingLastFrame = false;
+    private float lastRunSoundTime;
     private bool canMove = true;
 
     [Header("Scroll Collection")]
@@ -52,6 +51,9 @@ public class PlayerController : MonoBehaviour
 
     [Header("UI Manager")]
     [SerializeField] private UIManager uiManager;
+
+    [Header("Mobile UI")]
+    [SerializeField] private Joystick joystick; // Gán FixedJoystick từ Joystick Pack
 
     void Start()
     {
@@ -61,19 +63,35 @@ public class PlayerController : MonoBehaviour
         currentHealth = maxHealth;
         lastAttackTime = -attackCooldown;
         originalColor = spriteRenderer.color;
+
+        if (uiManager != null)
+        {
+            uiManager.SetAttackButtonListener(Attack);
+        }
     }
 
     void Update()
     {
-       if (isDead || !canMove) return;
+        if (isDead || !canMove) return;
 
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        bool isMobileUI = uiManager != null && uiManager.IsMobileUI();
+
+        if (isMobileUI && joystick != null)
+        {
+            // Dùng Joystick Pack để di chuyển
+            movement.x = joystick.Horizontal;
+            movement.y = joystick.Vertical;
+        }
+        else
+        {
+            // Dùng bàn phím để di chuyển
+            movement.x = Input.GetAxisRaw("Horizontal");
+            movement.y = Input.GetAxisRaw("Vertical");
+        }
 
         bool isMoving = movement != Vector2.zero;
         animator.SetBool(IsMoving, isMoving);
 
-        // Phát RunSFX khi bắt đầu di chuyển và đủ thời gian interval
         if (isMoving && !wasMovingLastFrame && !isAttacking && !isPushBack)
         {
             if (Time.time >= lastRunSoundTime + runSoundInterval)
@@ -99,7 +117,7 @@ public class PlayerController : MonoBehaviour
             spriteRenderer.flipX = false;
         }
 
-        if ((Input.GetKeyDown(KeyCode.J) || Input.GetMouseButtonDown(0)) && Time.time >= lastAttackTime + attackCooldown)
+        if (!isMobileUI && (Input.GetKeyDown(KeyCode.J) || Input.GetMouseButtonDown(0)) && Time.time >= lastAttackTime + attackCooldown)
         {
             Attack();
         }
@@ -114,7 +132,6 @@ public class PlayerController : MonoBehaviour
     {
         if (isDead || !canMove) return;
 
-        // Ưu tiên áp dụng knockback nếu đang trong trạng thái đẩy lùi
         if (isPushBack)
         {
             rb.linearVelocity = pushBackVelocity;
@@ -123,7 +140,7 @@ public class PlayerController : MonoBehaviour
 
         if (isAttacking)
         {
-            rb.linearVelocity = Vector2.zero; // Dừng hoàn toàn chuyển động khi đang tấn công
+            rb.linearVelocity = Vector2.zero;
             return;
         }
 
@@ -173,7 +190,6 @@ public class PlayerController : MonoBehaviour
     {
         if (isDead) return;
 
-        // Chỉ áp dụng knockback nếu không đang tấn công
         if (!isAttacking)
         {
             _PushBack(knockbackDirection);
@@ -208,7 +224,7 @@ public class PlayerController : MonoBehaviour
         currentHealth += amount;
         if (currentHealth > maxHealth)
         {
-            currentHealth = maxHealth; // Đảm bảo máu không vượt quá maxHealth
+            currentHealth = maxHealth;
         }
 
         Debug.Log("Player health updated: " + currentHealth);
@@ -253,9 +269,9 @@ public class PlayerController : MonoBehaviour
         this.canMove = canMove;
         if (!canMove)
         {
-            rb.linearVelocity = Vector2.zero; // Dừng di chuyển ngay lập tức
-            movement = Vector2.zero; // Đặt movement về 0 để không di chuyển
-            animator.SetBool(IsMoving, false); // Dừng animation di chuyển
+            rb.linearVelocity = Vector2.zero;
+            movement = Vector2.zero;
+            animator.SetBool(IsMoving, false);
         }
     }
 
@@ -268,7 +284,6 @@ public class PlayerController : MonoBehaviour
     {
         if (other.CompareTag("Win"))
         {
-            // Kiểm tra xem ScrollList còn object con nào không
             if (scrollList != null && scrollList.transform.childCount == 0 && enemyList.transform.childCount == 0)
             {
                 Debug.Log("You win! All scrolls collected!");
@@ -286,7 +301,6 @@ public class PlayerController : MonoBehaviour
         Gizmos.DrawWireSphere(attackPosition, attackRange);
     }
 
-    // Knockback system
     private void _PushBack(Vector2 direction)
     {
         pushBackVelocity = direction.normalized * KnockbackForce;

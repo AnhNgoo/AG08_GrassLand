@@ -906,8 +906,10 @@ MonoBehaviour:
   pauseButton: {fileID: 0}
   musicSlider: {fileID: 1718910818}
   sfxSlider: {fileID: 1060669937}
-  loadingPanel: {fileID: 1011837201}
-  loadingSlider: {fileID: 1747442697}
+  gameOverPanel: {fileID: 0}
+  uiToggleInGame: {fileID: 0}
+  mobileUICanvas: {fileID: 0}
+  attackButton: {fileID: 0}
 --- !u!1 &1000412735
 GameObject:
   m_ObjectHideFlags: 0
@@ -2025,6 +2027,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 882207530}
     m_Modifications:
+    - target: {fileID: 253471593133469318, guid: 1ee43b0ea551e9146a2a3ce5fbf2612d, type: 3}
+      propertyPath: m_Value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4536478209124129005, guid: 1ee43b0ea551e9146a2a3ce5fbf2612d, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4536478209124129005, guid: 1ee43b0ea551e9146a2a3ce5fbf2612d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4755858579612511323, guid: 1ee43b0ea551e9146a2a3ce5fbf2612d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2108,6 +2122,10 @@ PrefabInstance:
     - target: {fileID: 6807530288701659806, guid: 1ee43b0ea551e9146a2a3ce5fbf2612d, type: 3}
       propertyPath: m_Name
       value: LoadingPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807530288701659806, guid: 1ee43b0ea551e9146a2a3ce5fbf2612d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

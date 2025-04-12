@@ -21,49 +21,48 @@ public class UIManager : MonoBehaviour
     [Header("Game Over Panel")]
     [SerializeField] private GameObject gameOverPanel;
 
+    [Header("UI Toggle Settings")]
+    [SerializeField] private Toggle uiToggleInGame;
+    [SerializeField] private GameObject mobileUICanvas;
+    [SerializeField] private Button attackButton;
+
     private bool isPaused = false;
+    private bool isMobileUI = false;
 
     void Start()
     {
-        // Khởi tạo trạng thái ban đầu
-        if (menuPanel != null)
-        {
-            menuPanel.SetActive(true);
-        }
-        if (settingPanelMainMenu != null)
-        {
-            settingPanelMainMenu.SetActive(false);
-        }
-        if (pausePanel != null)
-        {
-            pausePanel.SetActive(false);
-        }
-        if (settingPanelInGame != null)
-        {
-            settingPanelInGame.SetActive(false);
-        }
+        if (menuPanel != null) menuPanel.SetActive(true);
+        if (settingPanelMainMenu != null) settingPanelMainMenu.SetActive(false);
+        if (pausePanel != null) pausePanel.SetActive(false);
+        if (settingPanelInGame != null) settingPanelInGame.SetActive(false);
+        if (gameOverPanel != null) gameOverPanel.SetActive(false);
+        if (mobileUICanvas != null) mobileUICanvas.SetActive(false);
 
-        // Khởi tạo giá trị slider từ PlayerPrefs
         if (musicSlider != null)
         {
             float musicVolume = PlayerPrefs.GetFloat("MusicVolume", 1f);
             musicSlider.value = musicVolume;
             musicSlider.onValueChanged.AddListener(SetMusicVolume);
-            //Debug.Log($"MusicSlider initialized to: {musicVolume}");
         }
         if (sfxSlider != null)
         {
             float sfxVolume = PlayerPrefs.GetFloat("SFXVolume", 1f);
             sfxSlider.value = sfxVolume;
             sfxSlider.onValueChanged.AddListener(SetSFXVolume);
-            //Debug.Log($"SFXSlider initialized to: {sfxVolume}");
         }
 
+        isMobileUI = PlayerPrefs.GetInt("IsMobileUI", 0) == 1;
+        if (uiToggleInGame != null)
+        {
+            uiToggleInGame.isOn = isMobileUI;
+            uiToggleInGame.onValueChanged.AddListener(ToggleUI);
+        }
+        UpdateUIState();
     }
 
     public void PlayGame()
     {
-        AudioManager.Instance.PlayButtonClickSound(); // Phát âm thanh nhấn nút
+        AudioManager.Instance.PlayButtonClickSound();
     }
 
     public void OpenSettingPanel()
@@ -134,7 +133,6 @@ public class UIManager : MonoBehaviour
     {
         AudioManager.Instance.PlayButtonClickSound();
         Time.timeScale = 1f;
-        // SceneManager.LoadScene("MainMenu");
     }
 
     private void SetMusicVolume(float volume)
@@ -153,13 +151,45 @@ public class UIManager : MonoBehaviour
         {
             gameOverPanel.SetActive(true);
         }
-        Time.timeScale = 0f; // Dừng game
+        Time.timeScale = 0f;
     }
 
     public void RestartGame()
     {
         AudioManager.Instance.PlayButtonClickSound();
-        Time.timeScale = 1f; // Khôi phục thời gian
+        Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    private void ToggleUI(bool useMobileUI)
+    {
+        isMobileUI = useMobileUI;
+        PlayerPrefs.SetInt("IsMobileUI", isMobileUI ? 1 : 0);
+        PlayerPrefs.Save();
+        UpdateUIState();
+
+        if (uiToggleInGame != null) uiToggleInGame.isOn = isMobileUI;
+    }
+
+    private void UpdateUIState()
+    {
+        if (mobileUICanvas != null)
+        {
+            mobileUICanvas.SetActive(isMobileUI);
+        }
+    }
+
+    public void SetAttackButtonListener(UnityEngine.Events.UnityAction attackAction)
+    {
+        if (attackButton != null)
+        {
+            attackButton.onClick.RemoveAllListeners();
+            attackButton.onClick.AddListener(attackAction);
+        }
+    }
+
+    public bool IsMobileUI()
+    {
+        return isMobileUI;
     }
 }
