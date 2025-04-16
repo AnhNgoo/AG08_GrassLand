@@ -1,70 +1,58 @@
 using UnityEngine;
 
+// Quản lý thanh máu nổi trên nhân vật hoặc enemy
 public class HealthBarManager : MonoBehaviour
 {
     [Header("Health Bar Settings")]
     public GameObject healthBarPrefab; // Prefab của HealthBar
-    public Transform worldSpaceCanvas; // Canvas chính (MainCanvas)
-    public Vector3 offset = new Vector3(0, 1.2f, 0); // Vị trí offset so với character
-    public float hideDelay = 3f; // Thời gian chờ trước khi ẩn thanh máu sau khi bị tổn thương
+    public Transform worldSpaceCanvas; // Canvas chứa thanh máu
+    public Vector3 offset = new Vector3(0, 1.2f, 0); // Vị trí lệch so với nhân vật
+    public float hideDelay = 3f; // Thời gian chờ trước khi ẩn thanh máu
 
-    private HealthBar healthBar;
-    private PlayerController playerController;
-    private EnemyAI enemyAI;
-    private int maxHealth;
-    private int lastHealth; // Lưu giá trị máu trước đó để kiểm tra tổn thương
+    private HealthBar healthBar; // Thanh máu
+    private PlayerController playerController; // Tham chiếu đến PlayerController
+    private EnemyAI enemyAI; // Tham chiếu đến EnemyAI
+    private int maxHealth; // Máu tối đa
+    private int lastHealth; // Máu trước đó để kiểm tra thay đổi
     private float hideTimer; // Đếm ngược để ẩn thanh máu
-    private bool isVisible = false; // Trạng thái hiển thị của thanh máu
-    private Camera mainCamera;
+    private bool isVisible = false; // Trạng thái hiển thị
+    private Camera mainCamera; // Camera chính
 
     private void Start()
     {
+        // Khởi tạo thành phần
         playerController = GetComponent<PlayerController>();
         enemyAI = GetComponent<EnemyAI>();
         mainCamera = Camera.main;
 
         // Tạo thanh máu
         if (worldSpaceCanvas != null && healthBarPrefab != null)
-        {
             CreateFloatingHealthBar();
-        }
 
-        // Khởi tạo giá trị máu
+        // Thiết lập máu ban đầu
         if (playerController != null)
         {
             maxHealth = playerController.maxHealth;
             lastHealth = playerController.GetCurrentHealth();
-            healthBar.SetMaxHealth(maxHealth);
-            healthBar.SetHealth(lastHealth);
         }
         else if (enemyAI != null)
         {
             maxHealth = enemyAI.maxHealth;
             lastHealth = enemyAI.currentHealth;
-            healthBar.SetMaxHealth(maxHealth);
-            healthBar.SetHealth(lastHealth);
         }
-
-        // Ẩn thanh máu ban đầu
-        healthBar.Hide();
+        healthBar.SetMaxHealth(maxHealth); // Đặt máu tối đa
+        healthBar.SetHealth(lastHealth); // Đặt máu hiện tại
+        healthBar.Hide(); // Ẩn ban đầu
     }
 
     private void Update()
     {
         if (healthBar == null) return;
 
-        // Cập nhật giá trị máu
-        int currentHealth = 0;
-        if (playerController != null)
-        {
-            currentHealth = playerController.GetCurrentHealth();
-        }
-        else if (enemyAI != null)
-        {
-            currentHealth = enemyAI.currentHealth;
-        }
+        // Lấy máu hiện tại
+        int currentHealth = playerController != null ? playerController.GetCurrentHealth() : enemyAI.currentHealth;
 
-        // Kiểm tra nếu bị tổn thương
+        // Hiển thị thanh máu nếu máu thay đổi
         if (currentHealth < lastHealth || currentHealth > lastHealth)
         {
             healthBar.Show();
@@ -73,10 +61,10 @@ public class HealthBarManager : MonoBehaviour
         }
 
         // Cập nhật giá trị máu
-        healthBar.SetHealth(currentHealth);
+        healthBar.SetHealth(currentHealth); // Cập nhật thanh máu
         lastHealth = currentHealth;
 
-        // Ẩn thanh máu nếu máu đầy hoặc hết thời gian chờ
+        // Ẩn thanh máu nếu máu đầy/hết hoặc hết thời gian
         if (currentHealth >= maxHealth || currentHealth <= 0)
         {
             healthBar.Hide();
@@ -92,15 +80,12 @@ public class HealthBarManager : MonoBehaviour
             }
         }
 
-        // Kiểm tra tầm nhìn camera (chỉ áp dụng cho enemy)
+        // Kiểm tra tầm nhìn camera cho enemy
         if (enemyAI != null)
         {
             bool isInCameraView = IsInCameraView();
             if (!isInCameraView && isVisible)
-            {
                 healthBar.Hide();
-                isVisible = false;
-            }
             else if (isInCameraView && !isVisible && currentHealth < maxHealth && currentHealth > 0)
             {
                 healthBar.Show();
@@ -114,32 +99,32 @@ public class HealthBarManager : MonoBehaviour
 
     private void CreateFloatingHealthBar()
     {
+        // Tạo thanh máu từ prefab
         GameObject healthBarObj = Instantiate(healthBarPrefab, worldSpaceCanvas);
-        healthBar = healthBarObj.GetComponent<HealthBar>();
-        //Debug.Log($"Created health bar for {gameObject.name}: {healthBar != null}");
+        healthBar = healthBarObj.GetComponent<HealthBar>(); // Lấy component HealthBar
     }
 
     private void UpdateFloatingHealthBarPosition()
     {
+        // Cập nhật vị trí thanh máu theo nhân vật
         if (healthBar != null && healthBar.transform.parent == worldSpaceCanvas)
         {
             Vector3 screenPos = mainCamera.WorldToScreenPoint(transform.position + offset);
-            healthBar.transform.position = screenPos;
-            //Debug.Log($"Health bar position for {gameObject.name}: {screenPos}");
+            healthBar.transform.position = screenPos; // Đặt vị trí trên màn hình
         }
     }
 
     private bool IsInCameraView()
     {
+        // Kiểm tra nhân vật có trong tầm nhìn camera không
         Vector3 viewportPoint = mainCamera.WorldToViewportPoint(transform.position);
         return viewportPoint.x >= 0 && viewportPoint.x <= 1 && viewportPoint.y >= 0 && viewportPoint.y <= 1 && viewportPoint.z > 0;
     }
 
     private void OnDestroy()
     {
+        // Xóa thanh máu khi nhân vật bị hủy
         if (healthBar != null)
-        {
             Destroy(healthBar.gameObject);
-        }
     }
 }
