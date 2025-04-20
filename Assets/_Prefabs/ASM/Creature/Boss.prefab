@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6219741923183542819}
   - component: {fileID: 5488224612797875967}
   - component: {fileID: 748854634739636430}
+  - component: {fileID: 2008197564065364924}
   m_Layer: 11
   m_Name: Boss
   m_TagString: Enemy
@@ -223,3 +224,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.5573883, y: 2.2851632}
   m_EdgeRadius: 0
+--- !u!114 &2008197564065364924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597128209003255050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 924018b6b09b0914ea29cfa78d06ea03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBarPrefab: {fileID: 8626972526356895652, guid: 92a87050cb1fb9442bba25a6a3259ea0, type: 3}
+  worldSpaceCanvas: {fileID: 0}
+  offset: {x: 0, y: 1.2, z: 0}
+  hideDelay: 3

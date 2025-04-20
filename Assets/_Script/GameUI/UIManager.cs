@@ -27,6 +27,9 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject mobileUICanvas; // Canvas UI mobile
     [SerializeField] private Button attackButton; // Nút tấn công cho mobile
 
+    [Header("Coming Soon Panel")]
+    [SerializeField] private GameObject comingSoonPanel; // Panel "Coming Soon"
+
     private bool isPaused = false; // Trạng thái tạm dừng
     private bool isMobileUI = false; // Trạng thái UI mobile
 
@@ -190,5 +193,16 @@ public class UIManager : MonoBehaviour
     public bool IsMobileUI()
     {
         return isMobileUI; // Trả về trạng thái UI mobile
+    }
+
+    public void ShowComingSoon()
+    {
+        if (comingSoonPanel != null)
+        {
+            comingSoonPanel.SetActive(true); // Hiển thị panel "Coming Soon"
+            Time.timeScale = 0f; // Dừng game
+            if (pauseButton != null)
+                pauseButton.gameObject.SetActive(false); // Ẩn nút Pause
+        }
     }
 }

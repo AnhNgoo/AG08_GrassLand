@@ -279,7 +279,8 @@ public class PlayerController : MonoBehaviour
         if (other.CompareTag("Win"))
         {
             if (scrollList != null && scrollList.transform.childCount == 0 && enemyList.transform.childCount == 0)
-                SceneManager.LoadScene("GrassLand_Map2"); // Chuyển scene khi thắng
+                if (uiManager != null)
+                uiManager.ShowComingSoon(); // Hiển thị panel "Coming Soon"
         }
     }
 
