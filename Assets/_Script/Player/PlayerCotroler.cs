@@ -159,6 +159,13 @@ public class PlayerController : MonoBehaviour
                 Vector2 knockbackDir = (enemy.transform.position - transform.position).normalized;
                 enemyAI.TakeDamage(attackDamage, knockbackDir); // Gây sát thương và đẩy lùi
             }
+
+            BossAI bossAI = enemy.GetComponent<BossAI>();
+            if (bossAI != null)
+            {
+                Vector2 knockbackDir = (enemy.transform.position - transform.position).normalized;
+                bossAI.TakeDamage(attackDamage, knockbackDir);
+            }
         }
     }
 

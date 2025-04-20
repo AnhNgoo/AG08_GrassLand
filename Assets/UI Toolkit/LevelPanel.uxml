@@ -1,0 +1,6 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement name="HUDContainer" style="flex-grow: 1; align-items: flex-start;">
+        <engine:Label text="Scrolls Collected: 0" name="ScrollsCollectedLabel" style="width: 432px; font-size: 20px; -unity-font-style: bold; color: rgb(255, 255, 255); -unity-font-definition: url(&quot;project://database/Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Fonts/PerfectDOSVGA437.ttf?fileID=12800000&amp;guid=74a5091d8707f334b9a5c31ef71a64ba&amp;type=3#PerfectDOSVGA437&quot;); height: 31px; position: absolute; top: 8px; left: 1053px;" />
+        <engine:Label text="Enemies Killed: 0" name="EnemiesKilledLabel" style="height: 26px; width: 544px; font-size: 20px; -unity-font-style: bold; color: rgb(255, 255, 255); -unity-font-definition: url(&quot;project://database/Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Fonts/PerfectDOSVGA437.ttf?fileID=12800000&amp;guid=74a5091d8707f334b9a5c31ef71a64ba&amp;type=3#PerfectDOSVGA437&quot;); position: absolute; top: 49px; left: 1051px;" />
+    </engine:VisualElement>
+</engine:UXML>

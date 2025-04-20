@@ -10,6 +10,7 @@ TagManager:
   - Enemy
   - PlayerAttack
   - Win
+  - Obstacle
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - Enemy
   - Obstacle
   - EnemyAttack
-  - 
+  - Boss
   - 
   - 
   - 
