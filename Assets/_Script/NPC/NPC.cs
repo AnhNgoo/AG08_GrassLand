@@ -113,7 +113,7 @@ public class NPC : MonoBehaviour
         }
     }
 
-    private void EndCutscene()
+    public void EndCutscene()
     {
         isCutsceneActive = false;
         currentSentenceIndex = 0;
